@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Server-side Development — Ambreon</title>
+    <link rel="stylesheet" href="styles/universal.css" />
+    <link rel="stylesheet" href="styles/services.css" />
+    <link rel="stylesheet" href="styles/details.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-inner">
+        <div class="left logo">
+          <a href="index.html"><img src="assets/icons/logo.svg" alt="Ambreon Logo" /></a>
+        </div>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+          <img src="assets/icons/menu.svg" alt="Menu Icon" />
+        </button>
+        <ul class="right nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" class="hire-us">Book a Call</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="main">
+        <div class="top">
+        <h1 class="significant">Server-side Development</h1>
+        <p class="lead">Reliable, behind-the-scenes systems that keep your product running smoothly.</p>
+      </div>
+
+      <section class="service-detail" id="server-side">
+        <div class="detail-hero">
+          <img src="assets/icons/server.svg" alt="Server Icon" />
+          <div class="hero-copy">
+            <h2>Server-side Development</h2>
+            <p>
+              We build the behind-the-scenes parts of your product — the systems that store data,
+              run features and make sure everything is fast and secure. We pick tools that
+              match your needs and focus on reliability, safety and keeping costs sensible as you grow.
+            </p>
+            
+          </div>
+        </div>
+
+        <h3 class="section-title">Core offerings</h3>
+        <div class="offerings">
+          <article class="offer-card">
+            <h4>APIs & Integrations</h4>
+            <p>Build simple, secure interfaces so apps and services can talk to each other and share data.</p>
+          </article>
+
+          <article class="offer-card">
+            <h4>Fast, reliable services</h4>
+            <p>Systems tuned to respond quickly, handle growth and stay available even under load.</p>
+          </article>
+
+          <article class="offer-card">
+            <h4>Quick iteration</h4>
+            <p>Small, focused components we can deliver quickly to test ideas and add features.</p>
+          </article>
+
+          <article class="offer-card">
+            <h4>Data & Storage</h4>
+            <p>Design reliable ways to store and find your data so it's available when you need it.</p>
+          </article>
+
+          <article class="offer-card">
+            <h4>Growing with you</h4>
+            <p>Plan for growth so your product works well as more people use it, while keeping costs reasonable.</p>
+          </article>
+
+          <article class="offer-card">
+            <h4>Monitoring & Support</h4>
+            <p>Tools and alerts that help us spot problems early and keep your service running smoothly.</p>
+          </article>
+        </div>
+
+        <h3 class="section-title">Typical engagements</h3>
+        <div class="how-we-work">
+          <div class="step">
+            <strong>1. Assess</strong>
+            <p>Architecture reviews, bottleneck identification and migration planning.</p>
+          </div>
+          <div class="step">
+            <strong>2. Prototype</strong>
+            <p>Proof-of-concepts for performance, integrations or cloud migrations.</p>
+          </div>
+          <div class="step">
+            <strong>3. Build</strong>
+            <p>Deliver microservices, background workers and secure APIs with automated tests.</p>
+          </div>
+          <div class="step">
+            <strong>4. Operate</strong>
+            <p>Production support, SRE practices, cost optimisation and continuous improvement.</p>
+          </div>
+        </div>
+
+        <h3 class="section-title">Integration with AI & Data</h3>
+        <p>
+          We frequently integrate server-side systems with AI components — model serving, feature
+          stores, batch & streaming pipelines — enabling production ML workflows and low-latency
+          inference endpoints.
+        </p>
+
+        
+
+        <h3 class="section-title">FAQ</h3>
+        <div class="faq">
+          <details>
+            <summary>Which backend stack do you recommend?</summary>
+            <p>We choose the stack per use-case: compiled, optimised runtimes for high-throughput services; lightweight runtimes for fast APIs and data processing.</p>
+          </details>
+          <details>
+            <summary>Can you migrate monoliths to microservices?</summary>
+            <p>Yes — we run incremental migration plans, strangler patterns, and robust testing to minimise risk.</p>
+          </details>
+          <details>
+            <summary>Which cloud platforms do you support?</summary>
+            <p>AWS, GCP and Azure; we design cloud-agnostic patterns where helpful and optimise per-provider when needed.</p>
+          </details>
+        </div>
+
+        <a class="button back-button" href="services.html">Back to Services</a>
+      </section>
+    </main>
+
+    <section class="contact-us">
+      <p class="cta">Let's get started</p>
+      <p class="body">Whatever your needs, we're  to help.</p>
+      <div class="cta-row">
+        <a href="contact.html" class="button">Book a Call</a>
+        <img
+          class="curved-arrow"
+          src="./assets/icons/curved_arrow.svg"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <img
+      class="landscape"
+      src="./assets/other/dot-background.webp"
+      alt=""
+      class="landscape-image"
+    />
+
+    <!-- Footer -->
+
+    <footer>
+      <!-- Left Column -->
+      <div class="column">
+        <select
+          name="language"
+          id="language-select"
+          aria-label="Select Language"
+        >
+        <option value="de">DE</option>  
+        <option value="en" selected>EN</option>
+        <option value="es">ES</option>
+        <option value="fr">FR</option>
+        <option value="id">ID</option>
+        </select>
+        <p>2025 &copy; Ambreon. All rights reserved.</p>
+      </div>
+      <!-- Services Column -->
+      <div class="column">
+        <p class="header">Services</p>
+        <ul>
+          <li><a href="service-ai-creation.html">AI Creation</a></li>
+          <li><a href="service-automation.html">System Automation</a></li>
+          <li><a href="service-website.html">Website Creation</a></li>
+          <li><a href="service-mobile.html">Mobile App Creation</a></li>
+          <li><a href="service-ios.html">iOS Native Apps</a></li>
+          <li><a href="service-backend.html">Server-side Development</a></li>
+          <li><a href="service-java.html">Java</a></li>
+          <li><a href="service-python.html">Python</a></li>
+          <li><a href="service-uiux.html">UI/UX Design</a></li>
+          <li><a href="service-consulting.html">Consulting Services</a></li>
+          <li><a href="service-marketing.html">Digital Marketing</a></li>
+        </ul>
+      </div>
+
+      <!-- Work Column -->
+      <div class="column">
+        <p class="header">Work</p>
+        <ul>
+          <li><a href="work-nifty.html">Nifty</a></li>
+          <li><a href="work-postmaster.html">Post Master</a></li>
+          <li><a href="work-informatics.html">Informatics</a></li>
+          <li><a href="work-documentation.html">Document Handler</a></li>
+          <li><a href="work-brainwave.html">Brainwave</a></li>
+          <li><a href="work-roadcrash.html">Road Crash</a></li>
+          <li><a href="work-housing.html">Housing Analysis</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources Column
+      <div class="column">
+        <p class="header">Resources</p>
+        <ul>
+          <li><a href="cookies.html">Cookies</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div> -->
+    </footer>
+    <script src="./scripts/universal.js"></script>
+  </body>
+</html>

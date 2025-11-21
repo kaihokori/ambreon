@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ambreon - Contact</title>
+  <link rel="stylesheet" href="styles/universal.css">
+  <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+  <!-- Background Circle -->
+  <div class="circle"></div>
+  <div class="circle additional"></div>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-inner">
+      <div class="left logo">
+        <a href="index.html"><img src="assets/icons/logo.svg" alt="Ambreon Logo"></a>
+      </div>
+
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <img src="assets/icons/menu.svg" alt="Menu Icon">
+      </button>
+
+      <ul class="right nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="hire-us">Book a Call</a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="main">
+      <div class="top">
+        <div class="column">
+        <h1 class="significant" style="margin-top: 100px; margin-bottom: 20px;">Contact Us</h1>
+        <p style="margin-bottom: 80px">
+          We'd love to hear from you! Whether you have questions about our services,
+          want to discuss a project, or have any other inquiries, feel free to reach out.
+        </p>
+        </div>
+      </div>
+      
+      <!-- Contact Methods + Form Section -->
+      <section class="contact-section">
+        <form id="contact-form" class="contact-form" action="#" method="post" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+
+          <label for="email">Email or Phone Number</label>
+          <input id="email" name="email" type="email" placeholder="Your email or phone number" required>
+
+          <label for="project">Describe your project</label>
+          <textarea id="project" name="project" rows="6" placeholder="Tell us more details about deadlines, technologies, what type of services you require and other relevant information."></textarea>
+
+          <label for="ref">How did you hear about us?</label>
+          <input id="ref" name="ref" type="text" placeholder="Google, Twitter, through a friend, etc.">
+          <!-- Honeypot field to reduce spam -->
+          <input type="text" name="honeypot" id="honeypot" style="display:none" tabindex="-1" autocomplete="off">
+
+          <div class="form-message hidden" id="form-message" aria-hidden="true"></div>
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </section>
+    </div>
+
+  <img
+      class="landscape"
+      src="./assets/other/dot-background.webp"
+      alt=""
+      class="landscape-image"
+    />
+
+    <!-- Footer -->
+
+    <footer>
+      <!-- Left Column -->
+      <div class="column">
+        <select
+          name="language"
+          id="language-select"
+          aria-label="Select Language"
+        >
+        <option value="de">DE</option>  
+        <option value="en" selected>EN</option>
+        <option value="es">ES</option>
+        <option value="fr">FR</option>
+        <option value="id">ID</option>
+        </select>
+        <p>2025 &copy; Ambreon. All rights reserved.</p>
+      </div>
+      <!-- Services Column -->
+      <div class="column">
+        <p class="header">Services</p>
+        <ul>
+          <li><a href="service-ai-creation.html">AI Creation</a></li>
+          <li><a href="service-automation.html">System Automation</a></li>
+          <li><a href="service-website.html">Website Creation</a></li>
+          <li><a href="service-mobile.html">Mobile App Creation</a></li>
+          <li><a href="service-ios.html">iOS Native Apps</a></li>
+          <li><a href="service-backend.html">Server-side Development</a></li>
+          <li><a href="service-java.html">Java</a></li>
+          <li><a href="service-python.html">Python</a></li>
+          <li><a href="service-uiux.html">UI/UX Design</a></li>
+          <li><a href="service-consulting.html">Consulting Services</a></li>
+          <li><a href="service-marketing.html">Digital Marketing</a></li>
+        </ul>
+      </div>
+
+      <!-- Work Column -->
+      <div class="column">
+        <p class="header">Work</p>
+        <ul>
+          <li><a href="work-nifty.html">Nifty</a></li>
+          <li><a href="work-postmaster.html">Post Master</a></li>
+          <li><a href="work-informatics.html">Informatics</a></li>
+          <li><a href="work-documentation.html">Document Handler</a></li>
+          <li><a href="work-brainwave.html">Brainwave</a></li>
+          <li><a href="work-roadcrash.html">Road Crash</a></li>
+          <li><a href="work-housing.html">Housing Analysis</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources Column
+      <div class="column">
+        <p class="header">Resources</p>
+        <ul>
+          <li><a href="cookies.html">Cookies</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div> -->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="scripts/universal.js"></script>
+    <script src="scripts/contact.js"></script>
+  </body>
+</html>

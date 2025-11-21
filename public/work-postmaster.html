@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Master — Ambreon</title>
+    <link rel="stylesheet" href="styles/universal.css" />
+    <link rel="stylesheet" href="styles/services.css" />
+    <link rel="stylesheet" href="styles/details.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-inner">
+        <div class="left logo">
+          <a href="index.html"><img src="assets/icons/logo.svg" alt="Ambreon Logo" /></a>
+        </div>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+          <img src="assets/icons/menu.svg" alt="Menu Icon" />
+        </button>
+        <ul class="right nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" class="hire-us">Book a Call</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="main">
+      <div class="top">
+        <h1 class="significant">Post Master</h1>
+        <p class="lead">A dependable local email tester that shows what's happening with messages so teams can diagnose issues quickly.</p>
+      </div>
+
+      <section class="service-detail work-detail">
+        <div class="detail-hero">
+          <img src="assets/work/postmaster.jpeg" alt="Post Master project image" style="aspect-ratio: 4/3; width: 100%; object-fit: cover;" />
+          <div class="hero-copy">
+            <h2>Clear message exchange and easy diagnostics</h2>
+            <p>
+              Post Master gives you a controlled email environment for local
+              testing: sending messages, simulating authentication, and
+              storing transactions in a readable format. It includes a simple
+              server, a test client, and a monitor that can record exchanges
+              for review.
+            </p>
+          </div>
+        </div>
+
+        <h3 class="section-title">Overview</h3>
+        <p>
+          Post Master provides a small, self-contained environment to send
+          and inspect email traffic locally. You can compose messages,
+          simulate delivery and authentication, and view detailed, easy-to-
+          read logs that show each step of a message's journey.
+        </p>
+
+        <h3 class="section-title">Core components</h3>
+        <div class="offerings">
+          <article class="offer-card">
+            <h4>Message server</h4>
+            <p>A simple server that accepts incoming message sessions and
+            handles the usual send/receive steps and optional test
+            authentication.</p>
+          </article>
+          <article class="offer-card">
+            <h4>Test client</h4>
+            <p>A small client that reads message files and sends them to the
+            server for testing and verification.</p>
+          </article>
+          <article class="offer-card">
+            <h4>Monitor</h4>
+            <p>An optional component that sits between client and server to
+            record exchanges for auditing and troubleshooting.</p>
+          </article>
+        </div>
+
+        <h3 class="section-title">Key features</h3>
+        <ul>
+          <li>Clear, chronological logs of every message exchange.</li>
+          <li>Support for simple challenge-response checks to test authentication.
+          </li>
+          <li>Messages are saved in a readable transaction format for review.</li>
+          <li>Configurable ports and folders so you can run tests locally.
+          </li>
+          <li>Optional multi-process mode to simulate several clients at once.
+          </li>
+        </ul>
+
+        <h3 class="section-title">How it works</h3>
+        <div class="case-studies">
+          <div class="case">
+            <p><strong>1. Start a session:</strong> The client connects and the
+            server is ready to accept messages.</p>
+          </div>
+          <div class="case">
+            <p><strong>2. Optional authentication:</strong> The client can run a
+            simple challenge-response to verify its identity for testing.
+            </p>
+          </div>
+          <div class="case">
+            <p><strong>3. Deliver the message:</strong> The client sends the
+            message and the server acknowledges and stores the transaction
+            in a readable format.</p>
+          </div>
+          <div class="case">
+            <p><strong>4. Monitor and review:</strong> The monitor can record
+            every line to allow offline review and debugging.</p>
+          </div>
+        </div>
+
+        <h3 class="section-title">Privacy & safety</h3>
+        <p>
+          Post Master aims to avoid keeping data longer than needed. Transaction
+          files are written in a readable format and temporary state can be
+          cleared automatically. Authentication details are used only for
+          session checks; production deployments should use full transport
+          encryption for real-world security.
+        </p>
+
+        <h3 class="section-title">Setup</h3>
+        <div class="offerings">
+          <article class="offer-card">
+            <h4>Language</h4>
+            <p>Written in Python to keep the tools simple and easy to run locally.</p>
+          </article>
+          <article class="offer-card">
+            <h4>Networking</h4>
+            <p>Uses straightforward network connections so common tools can be
+            used for testing and inspection.</p>
+          </article>
+          <article class="offer-card">
+            <h4>Authentication checks</h4>
+            <p>Includes simple challenge-response checks to test authentication
+            flows during diagnostics.</p>
+          </article>
+        </div>
+
+        <h3 class="section-title">Outcomes</h3>
+        <div class="case-studies">
+          <div class="case">
+            <p><strong>Better visibility:</strong> Readable logs make it much
+            faster to spot and fix message delivery problems.</p>
+          </div>
+          <div class="case">
+            <p><strong>More resilient testing:</strong> The system can simulate
+            multiple clients at once and keep clear, separate logs for each.
+            </p>
+          </div>
+        </div>
+
+        <h3 class="section-title">Try it</h3>
+        <p>
+          To run locally, start the server and client using simple
+          configuration files that set ports and folders. The setup is
+          self-contained and meant for offline testing and inspection.
+        </p>
+
+        <a class="button back-button" href="work.html">Back to Work</a>
+      </section>
+    </main>
+    
+    <!-- Contact Us Section -->
+
+    <section class="contact-us">
+      <p class="cta">Let's get started</p>
+      <p class="body">Whatever your needs, we're  to help.</p>
+      <div class="cta-row">
+        <a href="contact.html" class="button">Book a Call</a>
+        <img
+          class="curved-arrow"
+          src="./assets/icons/curved_arrow.svg"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <img
+      class="landscape"
+      src="./assets/other/dot-background.webp"
+      alt=""
+      class="landscape-image"
+    />
+
+    <!-- Footer -->
+
+    <footer>
+      <!-- Left Column -->
+      <div class="column">
+        <select
+          name="language"
+          id="language-select"
+          aria-label="Select Language"
+        >
+        <option value="de">DE</option>  
+        <option value="en" selected>EN</option>
+        <option value="es">ES</option>
+        <option value="fr">FR</option>
+        <option value="id">ID</option>
+        </select>
+        <p>2025 &copy; Ambreon. All rights reserved.</p>
+      </div>
+      <!-- Services Column -->
+      <div class="column">
+        <p class="header">Services</p>
+        <ul>
+          <li><a href="service-ai-creation.html">AI Creation</a></li>
+          <li><a href="service-automation.html">System Automation</a></li>
+          <li><a href="service-website.html">Website Creation</a></li>
+          <li><a href="service-mobile.html">Mobile App Creation</a></li>
+          <li><a href="service-ios.html">iOS Native Apps</a></li>
+          <li><a href="service-backend.html">Server-side Development</a></li>
+          <li><a href="service-java.html">Java</a></li>
+          <li><a href="service-python.html">Python</a></li>
+          <li><a href="service-uiux.html">UI/UX Design</a></li>
+          <li><a href="service-consulting.html">Consulting Services</a></li>
+          <li><a href="service-marketing.html">Digital Marketing</a></li>
+        </ul>
+      </div>
+
+      <!-- Work Column -->
+      <div class="column">
+        <p class="header">Work</p>
+        <ul>
+          <li><a href="work-nifty.html">Nifty</a></li>
+          <li><a href="work-postmaster.html">Post Master</a></li>
+          <li><a href="work-informatics.html">Informatics</a></li>
+          <li><a href="work-documentation.html">Document Handler</a></li>
+          <li><a href="work-brainwave.html">Brainwave</a></li>
+          <li><a href="work-roadcrash.html">Road Crash</a></li>
+          <li><a href="work-housing.html">Housing Analysis</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources Column
+      <div class="column">
+        <p class="header">Resources</p>
+        <ul>
+          <li><a href="cookies.html">Cookies</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div> -->
+    </footer>
+    <script src="./scripts/universal.js"></script>
+  </body>
+</html>

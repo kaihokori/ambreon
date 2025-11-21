@@ -1,0 +1,119 @@
+.service-detail,
+.work-detail {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 60px 40px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(22, 38, 57, 0.07);
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start;
+  box-sizing: border-box;
+  position: relative;
+  text-align: left;
+  overflow: visible;
+  padding-bottom: 96px;
+}
+
+.work-detail img {
+  grid-column: 1 / -1;
+  width: calc(100% + 80px);
+  margin-left: -40px;
+  margin-right: -40px;
+  margin-top: -60px;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+  background: transparent;
+  border-radius: 12px 12px 0 0;
+}
+
+.service-detail img {
+  grid-column: 1 / -1;
+  display: block;
+  width: 140px;
+  max-width: 30%;
+  height: auto;
+  margin: 0px auto 12px auto;
+  object-fit: contain;
+  background: transparent;
+  border-radius: 12px;
+  z-index: 10;
+}
+
+.work-detail a img {
+  width: 24px;
+  height: 24px;
+}
+
+.service-detail h2,
+.work-detail h2 {
+  font-size: 2rem;
+  margin: 0px 0 20px;
+}
+
+.service-detail p,
+.work-detail p {
+  color: var(--text-grey);
+  line-height: 1.6;
+  margin: 0 0px 12px 0;
+}
+
+.service-detail ul,
+.work-detail ul {
+  margin: 10px 0 0 16px;
+  color: var(--text-grey);
+}
+
+.service-detail ul li,
+.work-detail ul li {
+  color: var(--text-grey);
+  list-style-type: disc;
+}
+
+.service-detail .back-button,
+.work-detail .back-button {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  z-index: 12;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.service-detail .back-button:hover,
+.work-detail .back-button:hover {
+  background: rgba(255,255,255,0.1);
+  box-shadow: 0 10px 30px rgba(2,6,23,0.5);
+}
+@media (max-width: 800px){
+  .service-detail, .work-detail{
+    grid-template-columns: 1fr;
+    padding: 30px;
+    padding-bottom: 80px;
+    gap: 20px;
+  }
+
+  .work-detail img{
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    justify-self: center;
+  }
+
+  .service-detail img {
+    margin-top: 0px;
+  }
+
+  .significant { font-size: 4rem; }
+}

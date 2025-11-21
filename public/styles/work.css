@@ -1,0 +1,102 @@
+/* Top Section */
+
+.top {
+  text-align: center;
+  margin: 0 auto;
+  align-self: center;
+}
+
+.significant {
+  margin: 50px 0 0 0;
+  font-size: 5rem;
+}
+
+.top p {
+  font-size: 1.2rem;
+  color: var(--text-grey);
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.top span {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Work Section */
+
+.work {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  max-width: 1100px;
+  margin: 40px 0 0 150px;
+  padding-right: 150px;
+}
+
+.work-item {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  /* margin-bottom: 20px; */
+}
+
+/* Make the first work item span the full width of the grid */
+.work-item:first-child {
+  grid-column: 1 / -1;
+  max-width: none;
+}
+
+.work-item > img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  background-color: #111;
+}
+
+.work-info {
+  padding: 40px;
+}
+
+.work-info {
+  /* ensure content can shrink properly inside grid/flex containers */
+  min-width: 0;
+  text-align: left;
+}
+
+.work-info .heading {
+  font-size: 1.5rem;
+  margin: 5px 0 30px;
+}
+
+.applied-tech {
+  margin-top: 100px;
+}
+
+.content {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .top {
+    margin-left: 16px;
+  }
+
+  .work {
+    margin-left: 16px;
+    padding-right: 16px;
+    grid-template-columns: 1fr;
+  }
+
+  /* .work-item img {
+    height: 160px;
+  } */
+
+  .curved-arrow {
+    display: none;
+  }
+}

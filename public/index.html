@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ambreon - Software Development and Consulting</title>
+    <link rel="stylesheet" href="./styles/universal.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+  </head>
+  <body>
+    <!-- Circle -->
+    <div class="circle"></div>
+    <div class="circle additional"></div>
+
+    <!-- Navbar -->
+    <nav>
+      <div class="nav-inner">
+        <div class="left logo">
+          <a href="index.html"
+            ><img src="./assets/icons/logo.svg" alt="Ambreon Logo"
+          /></a>
+        </div>
+
+        <button
+          class="menu-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <img src="./assets/icons/menu.svg" alt="Menu Icon" />
+        </button>
+
+        <ul class="right nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" class="hire-us">Book a Call</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="main">
+      <!-- Landing Section -->
+
+      <section class="landing">
+        <div class="header">
+          <h1 class="significant" style="margin-top: 50px;">Uncover</h1>
+          <h1 class="significant">Extraordinary</h1>
+        </div>
+        <p>
+          Your trusted partner for innovative software design and development
+          solutions.
+        </p>
+        <div class="stone-image">
+          <img
+            src="./assets/other/stone.webp"
+            alt="Stone with light shining from the top"
+          />
+        </div>
+      </section>
+
+      <!-- We Are Section -->
+      <section class="we-are">
+        <div class="left">
+          <p class="key">We Are Ambreon</p>
+          <p class="heading">Transforming Ideas into Reality</p>
+          <p class="content">
+            We build and maintain cutting edge software solutions that drive
+            success and innovation for businesses worldwide, using the latest
+            technologies and industry best practices to deliver exceptional
+            results.
+          </p>
+        </div>
+        <div class="right">
+          <img
+            src="./assets/other/code.jpg"
+            alt="Code sample on a computer screen"
+          />
+        </div>
+      </section>
+
+      <!-- Work Example Section -->
+      <section class="work">
+        <h2>Most Recent Milestone</h2>
+        <div class="example">
+          <div class="left">
+            <img
+              src="./assets/work/nifty.jpeg"
+              alt="Person using the Nifty chatbot on a smartphone"
+            />
+          </div>
+          <div class="right">
+            <p class="key">AI + Workflow Development</p>
+            <p class="heading">Nifty</p>
+            <p class="content">
+              An AI-powered chatbot designed to streamline hotel customer
+              service, enhancing guest experiences through instant, personalized
+              interactions for bookings, inquiries, and support.
+            </p>
+          </div>
+        </div>
+        <a href="work.html" class="button">More examples</a>
+      </section>
+
+      <!-- Why Us Section -->
+
+      <section class="why-us">
+        <div class="left">
+          <img
+            src="./assets/other/landscape.png"
+            alt="Photo of an orange foggy landscape with data waves flying above"
+          />
+        </div>
+        <div class="right">
+          <h2>Why Us?</h2>
+          <p class="heading-alt">Expertise</p>
+          <p class="content">
+            Our team of seasoned professionals brings a wealth of experience
+            across diverse industries and technologies.
+          </p>
+          <p class="heading-alt">Innovation</p>
+          <p class="content">
+            We leverage the latest technologies and methodologies to deliver
+            cutting-edge solutions that drive business growth.
+          </p>
+          <p class="heading-alt">Customization</p>
+          <p class="content">
+            We tailor our services to meet your unique business needs, ensuring
+            optimal results and satisfaction.
+          </p>
+          <p class="heading-alt">Collaboration</p>
+          <p class="content">
+            We work closely with you throughout the development process,
+            fostering transparency and open communication.
+          </p>
+          <p class="heading-alt">Support</p>
+          <p class="content">
+            We provide ongoing support and maintenance to ensure your software
+            remains up-to-date and performs optimally.
+          </p>
+        </div>
+      </section>
+
+      <!-- Applied Technology Section -->
+
+      <!-- KPI Section -->
+      <section class="kpis" aria-labelledby="kpi-heading">
+        <div class="kpi-grid">
+          <div class="kpi" role="group" aria-label="Projects delivered">
+            <p class="kpi-value">100+</p>
+            <p class="kpi-label">Successful Projects</p>
+          </div>
+          <div class="kpi" role="group" aria-label="Average uptime">
+            <p class="kpi-value">50+</p>
+            <p class="kpi-label">Satisfied Clients</p>
+          </div>
+           <div class="kpi" role="group" aria-label="Uptime reliability">
+            <p class="kpi-value">99.9%</p>
+            <p class="kpi-label">Uptime Reliability</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Carousel -->
+      <section class="services-carousel" aria-label="Our services">
+        <h2>Our Services</h2>
+        <button class="carousel-button carousel-prev" aria-label="Scroll services left">
+          <img src="./assets/icons/right_arrow.svg" alt=""/>
+        </button>
+        <button class="carousel-button carousel-next" aria-label="Scroll services right">
+          <img src="./assets/icons/right_arrow.svg" alt=""/>
+        </button>
+        <div class="carousel" role="list">
+          <article class="service-card" role="listitem">
+            <img src="./assets/icons/ai.svg" alt="AI Creation icon" />
+            <p class="service-title">AI Creation</p>
+            <p class="service-desc">Custom AI models and automation for smarter products.</p>
+            <a href="service-ai-creation.html" class="see-details">See Details
+              <img src="./assets/icons/right_arrow.svg" alt="right arrow"/>
+            </a>
+          </article>
+
+          <article class="service-card" role="listitem">
+            <img src="./assets/icons/automation.svg" alt="System Automation icon" />
+            <p class="service-title">Automation</p>
+            <p class="service-desc">Workflow automation that saves time and reduces errors.</p>
+            <a href="service-automation.html" class="see-details">See Details
+              <img src="./assets/icons/right_arrow.svg" alt="right arrow"/>
+            </a>
+          </article>
+
+          <article class="service-card" role="listitem">
+            <img src="./assets/icons/website.svg" alt="Website Creation icon" />
+            <p class="service-title">Websites</p>
+            <p class="service-desc">Fast, accessible websites tailored to your brand.</p>
+            <a href="service-website.html" class="see-details">See Details
+              <img src="./assets/icons/right_arrow.svg" alt="right arrow"/>
+            </a>
+          </article>
+
+          <article class="service-card" role="listitem">
+            <img src="./assets/icons/mobile.svg" alt="Mobile App icon" />
+            <p class="service-title">Mobile Apps</p>
+            <p class="service-desc">iOS & Android apps built for scale and performance.</p>
+            <a href="service-mobile.html" class="see-details">See Details
+              <img src="./assets/icons/right_arrow.svg" alt="right arrow"/>
+            </a>
+          </article>
+
+          <article class="service-card" role="listitem">
+            <img src="./assets/icons/swift.svg" alt="iOS Native Apps icon" />
+            <p class="service-title">iOS Native Apps</p>
+            <p class="service-desc">High-performance iPhone apps using Swift and SwiftUI.</p>
+            <a href="service-ios.html" class="see-details">See Details
+              <img src="./assets/icons/right_arrow.svg" alt="right arrow"/>
+            </a>
+          </article>
+
+          <article class="service-card" role="listitem">
+            <img src="./assets/icons/server.svg" alt="Backend Development icon" />
+            <p class="service-title">Backend</p>
+            <p class="service-desc">Robust server-side systems and APIs.</p>
+            <a href="service-backend.html" class="see-details">See Details
+              <img src="./assets/icons/right_arrow.svg" alt="right arrow"/>
+            </a>
+          </article>
+
+          <article class="service-card" role="listitem">
+            <img src="./assets/icons/java.svg" alt="Java Development icon" />
+            <p class="service-title">Java</p>
+            <p class="service-desc">Enterprise-grade applications built with Java.</p>
+            <a href="service-java.html" class="see-details">See Details
+              <img src="./assets/icons/right_arrow.svg" alt="right arrow"/>
+            </a>
+          </article>
+
+          <article class="service-card" role="listitem">
+            <img src="./assets/icons/python.svg" alt="Python Development icon" />
+            <p class="service-title">Python</p>
+            <p class="service-desc">Data-driven solutions and automation with Python.</p>
+            <a href="service-python.html" class="see-details">See Details
+              <img src="./assets/icons/right_arrow.svg" alt="right arrow"/>
+            </a>
+          </article>
+
+          <article class="service-card" role="listitem">
+            <img src="./assets/icons/uiux.svg" alt="UI/UX Design icon" />
+            <p class="service-title">UI/UX Design</p>
+            <p class="service-desc">Human-centered interfaces that delight users.</p>
+            <a href="service-uiux.html" class="see-details">See Details
+              <img src="./assets/icons/right_arrow.svg" alt="right arrow"/>
+            </a>
+          </article>
+
+          <article class="service-card" role="listitem">
+            <img src="./assets/icons/consulting.svg" alt="Consulting icon" />
+            <p class="service-title">Consulting</p>
+            <p class="service-desc">Strategy, architecture and delivery planning.</p>
+            <a href="service-consulting.html" class="see-details">See Details
+              <img src="./assets/icons/right_arrow.svg" alt="right arrow"/>
+            </a>
+          </article>
+
+          <article class="service-card" role="listitem">
+            <img src="./assets/icons/marketing.svg" alt="Marketing icon" />
+            <p class="service-title">Marketing</p>
+            <p class="service-desc">Growth and acquisition strategies for digital products.</p>
+            <a href="service-marketing.html" class="see-details">See Details
+              <img src="./assets/icons/right_arrow.svg" alt="right arrow"/>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Applied Technologies Section -->
+
+      <section style="margin-top: 100px;" class="applied-tech">
+        <h2>Applied Technologies</h2>
+        <div class="content">
+          <a href="https://www.cloudflare.com/"><img src="assets/logos/cloudflare.webp" alt="Cloudflare Logo"/></a>
+          <a href="https://cloud.google.com/"><img src="assets/logos/google-cloud.webp" alt="Google Cloud Logo"/></a>
+          <a href="https://about.meta.com/"><img src="assets/logos/meta.webp" alt="Meta Developer Logo"/></a>
+          <a href="https://n8n.io/"><img src="./assets/logos/n8n.webp" alt="n8n Logo"/></a>
+          <a href="https://www.python.org/"><img src="assets/logos/python.webp" alt="Python"/></a>
+          <a href="https://www.r-project.org/"><img src="assets/logos/r.webp" alt="R"/></a>
+          <a href="https://pandas.pydata.org/"><img src="assets/logos/pandas.webp" alt="Pandas"/></a>
+          <a href="https://plotly.com/"><img src="assets/logos/plotly.webp" alt="Plotly"/></a>
+          <a href="https://matplotlib.org/"><img src="assets/logos/matplotlib.webp" alt="Matplotlib"/></a>
+          <a href="https://jupyter.org/"><img src="assets/logos/jupyter.webp" alt="Jupyter"/></a>
+          <a href="https://opencv.org/"><img src="assets/logos/opencv.webp" alt="OpenCV"/></a>
+        </div>
+      </section>
+
+      <!-- Reviews Section -->
+      <section class="reviews" aria-label="Customer reviews">
+        <h2>Reviews</h2>
+        <div class="reviews-grid">
+          <article class="review-card">
+            <img src="./assets/other/jerry.jpeg" alt="Reviewer: First" />
+            <p class="review-quote">"...delivered excellent insights and a fast turnaround that reshaped our roadmap."</p>
+            <p class="review-meta"><strong>Jerry Vu</strong> — CyberSoc</p>
+          </article>
+
+          <article class="review-card">
+            <img src="./assets/other/reviewer2.jpeg" alt="Reviewer: First" />
+            <p class="review-quote">"Great communication and thoughtful solutions."</p>
+            <p class="review-meta"><strong>First Last</strong> — Company</p>
+          </article>
+
+          <article class="review-card">
+            <img src="./assets/other/fiona.jpeg" alt="Reviewer: First" />
+            <p class="review-quote">"...professional and insightful. Exceeded expectations and raised the bar for our team."</p>
+            <p class="review-meta"><strong>Fiona Chen</strong> — Dyson Australia</p>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- Contact Us Section -->
+
+    <section class="contact-us">
+      <p class="cta">Let's get started</p>
+      <p class="body">Whatever your needs, we're  to help.</p>
+      <div class="cta-row">
+        <a href="contact.html" class="button">Book a Call</a>
+        <img
+          class="curved-arrow"
+          src="./assets/icons/curved_arrow.svg"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <img
+      class="landscape"
+      src="./assets/other/dot-background.webp"
+      alt=""
+      class="landscape-image"
+    />
+
+    <!-- Footer -->
+
+    <footer>
+      <!-- Left Column -->
+      <div class="column">
+        <select
+          name="language"
+          id="language-select"
+          aria-label="Select Language"
+        >
+        <option value="de">DE</option>  
+        <option value="en" selected>EN</option>
+        <option value="es">ES</option>
+        <option value="fr">FR</option>
+        <option value="id">ID</option>
+        </select>
+        <p>2025 &copy; Ambreon. All rights reserved.</p>
+      </div>
+      <!-- Services Column -->
+      <div class="column">
+        <p class="header">Services</p>
+        <ul>
+          <li><a href="service-ai-creation.html">AI Creation</a></li>
+          <li><a href="service-automation.html">System Automation</a></li>
+          <li><a href="service-website.html">Website Creation</a></li>
+          <li><a href="service-mobile.html">Mobile App Creation</a></li>
+          <li><a href="service-ios.html">iOS Native Apps</a></li>
+          <li><a href="service-backend.html">Server-side Development</a></li>
+          <li><a href="service-java.html">Java</a></li>
+          <li><a href="service-python.html">Python</a></li>
+          <li><a href="service-uiux.html">UI/UX Design</a></li>
+          <li><a href="service-consulting.html">Consulting Services</a></li>
+          <li><a href="service-marketing.html">Digital Marketing</a></li>
+        </ul>
+      </div>
+
+      <!-- Work Column -->
+      <div class="column">
+        <p class="header">Work</p>
+        <ul>
+          <li><a href="work-nifty.html">Nifty</a></li>
+          <li><a href="work-postmaster.html">Post Master</a></li>
+          <li><a href="work-informatics.html">Informatics</a></li>
+          <li><a href="work-documentation.html">Document Handler</a></li>
+          <li><a href="work-brainwave.html">Brainwave</a></li>
+          <li><a href="work-roadcrash.html">Road Crash</a></li>
+          <li><a href="work-housing.html">Housing Analysis</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources Column
+      <div class="column">
+        <p class="header">Resources</p>
+        <ul>
+          <li><a href="cookies.html">Cookies</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div> -->
+    </footer>
+    <script src="./scripts/universal.js"></script>
+  </body>
+</html>
