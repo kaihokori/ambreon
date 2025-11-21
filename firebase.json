@@ -6,6 +6,13 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/:file.html",
+        "destination": "/:file",
+        "type": 301
+      }
     ]
   }
 }
