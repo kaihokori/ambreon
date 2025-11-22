@@ -9,14 +9,23 @@
     <link rel="stylesheet" href="styles/details.css" />
   </head>
   <body>
+    <!-- Navbar -->
     <nav>
       <div class="nav-inner">
         <div class="left logo">
-          <a href="/index"><img src="assets/icons/logo.svg" alt="Ambreon Logo" /></a>
+          <a href="/index"
+            ><img src="./assets/icons/logo.svg" alt="Ambreon Logo"
+          /></a>
         </div>
-        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
-          <img src="assets/icons/menu.svg" alt="Menu Icon" />
+
+        <button
+          class="menu-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <img src="./assets/icons/menu.svg" alt="Menu Icon" />
         </button>
+
         <ul class="right nav-links">
           <li><a href="/index" data-i18n="nav.home">Home</a></li>
           <li><a href="/work" data-i18n="nav.work">Work</a></li>
@@ -66,6 +75,8 @@
         <a class="button back-button" href="/services" data-i18n="service.python.back">Back to Services</a>
       </section>
     </main>
+
+    <!-- Contact Us Section -->
 
     <section class="contact-us">
       <p class="cta" data-i18n="contact.cta">Let's get started</p>
@@ -126,15 +137,15 @@
 
       <!-- Work Column -->
       <div class="column">
-        <p class="header">Work</p>
+        <p class="header" data-i18n="nav.work">Work</p>
         <ul>
-          <li><a href="/work-nifty">Nifty</a></li>
-          <li><a href="/work-postmaster">Post Master</a></li>
-          <li><a href="/work-informatics">Informatics</a></li>
-          <li><a href="/work-documentation">Document Handler</a></li>
-          <li><a href="/work-brainwave">Brainwave</a></li>
-          <li><a href="/work-roadcrash">Road Crash</a></li>
-          <li><a href="/work-housing">Housing Analysis</a></li>
+          <li><a href="/work-nifty" data-i18n="work.nifty.heading">Nifty</a></li>
+          <li><a href="/work-postmaster" data-i18n="work.postmaster.heading">Post Master</a></li>
+          <li><a href="/work-informatics" data-i18n="work.informatics.heading">Informatics</a></li>
+          <li><a href="/work-documentation" data-i18n="work.documentation.heading">Document Handler</a></li>
+          <li><a href="/work-brainwave" data-i18n="work.brainwave.heading">Brainwave</a></li>
+          <li><a href="/work-roadcrash" data-i18n="work.roadcrash.heading">Road Crash</a></li>
+          <li><a href="/work-housing" data-i18n="work.housing.heading">Housing Analysis</a></li>
         </ul>
       </div>
 
