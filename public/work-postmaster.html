@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Post Master - Ambreon</title>
+    <title data-i18n="meta.workPostmasterTitle">Post Master - Ambreon</title>
     <link rel="stylesheet" href="styles/universal.css" />
     <link rel="stylesheet" href="styles/services.css" />
     <link rel="stylesheet" href="styles/details.css" />
@@ -18,146 +18,104 @@
           <img src="assets/icons/menu.svg" alt="Menu Icon" />
         </button>
         <ul class="right nav-links">
-          <li><a href="/index">Home</a></li>
-          <li><a href="/work">Work</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact" class="hire-us">Book a Call</a></li>
+          <li><a href="/index" data-i18n="nav.home">Home</a></li>
+          <li><a href="/work" data-i18n="nav.work">Work</a></li>
+          <li><a href="/services" data-i18n="nav.services">Services</a></li>
+          <li><a href="/about" data-i18n="nav.about">About</a></li>
+          <li><a href="/contact" class="hire-us" data-i18n="contact.book">Book a Call</a></li>
         </ul>
       </div>
     </nav>
 
     <main class="main">
       <div class="top">
-        <h1 class="significant">Post Master</h1>
-        <p class="lead">A dependable local email tester that shows what's happening with messages so teams can diagnose issues quickly.</p>
+        <h1 class="significant" data-i18n="work.postmaster.heading">Post Master</h1>
+        <p class="lead" data-i18n="work.postmaster.lead">A dependable local email tester that shows what's happening with messages so teams can diagnose issues quickly.</p>
       </div>
 
       <section class="service-detail work-detail">
         <div class="detail-hero">
           <img src="assets/work/postmaster.jpeg" alt="Post Master project image" style="aspect-ratio: 4/3; width: 100%; object-fit: cover;" />
           <div class="hero-copy">
-            <h2>Clear message exchange and easy diagnostics</h2>
-            <p>
-              Post Master gives you a controlled email environment for local
-              testing: sending messages, simulating authentication, and
-              storing transactions in a readable format. It includes a simple
-              server, a test client, and a monitor that can record exchanges
-              for review.
-            </p>
+            <h2 data-i18n="work.postmaster.hero.heading">Clear message exchange and easy diagnostics</h2>
+            <p data-i18n="work.postmaster.hero.p">Post Master gives you a controlled email environment for local testing: sending messages, simulating authentication, and storing transactions in a readable format. It includes a simple server, a test client, and a monitor that can record exchanges for review.</p>
           </div>
         </div>
 
-        <h3 class="section-title">Overview</h3>
-        <p>
-          Post Master provides a small, self-contained environment to send
-          and inspect email traffic locally. You can compose messages,
-          simulate delivery and authentication, and view detailed, easy-to-
-          read logs that show each step of a message's journey.
-        </p>
+        <h3 class="section-title" data-i18n="work.postmaster.overview.title">Overview</h3>
+        <p data-i18n="work.postmaster.overview.p">Post Master provides a small, self-contained environment to send and inspect email traffic locally. You can compose messages, simulate delivery and authentication, and view detailed, easy-to-read logs that show each step of a message's journey.</p>
 
-        <h3 class="section-title">Core components</h3>
+        <h3 class="section-title" data-i18n="work.postmaster.offerings.title">Core components</h3>
         <div class="offerings">
           <article class="offer-card">
-            <h4>Message server</h4>
-            <p>A simple server that accepts incoming message sessions and
-            handles the usual send/receive steps and optional test
-            authentication.</p>
+            <h4 data-i18n="work.postmaster.offerings.server.title">Message server</h4>
+            <p data-i18n="work.postmaster.offerings.server.desc">A simple server that accepts incoming message sessions and handles the usual send/receive steps and optional test authentication.</p>
           </article>
           <article class="offer-card">
-            <h4>Test client</h4>
-            <p>A small client that reads message files and sends them to the
-            server for testing and verification.</p>
+            <h4 data-i18n="work.postmaster.offerings.client.title">Test client</h4>
+            <p data-i18n="work.postmaster.offerings.client.desc">A small client that reads message files and sends them to the server for testing and verification.</p>
           </article>
           <article class="offer-card">
-            <h4>Monitor</h4>
-            <p>An optional component that sits between client and server to
-            record exchanges for auditing and troubleshooting.</p>
+            <h4 data-i18n="work.postmaster.offerings.monitor.title">Monitor</h4>
+            <p data-i18n="work.postmaster.offerings.monitor.desc">An optional component that sits between client and server to record exchanges for auditing and troubleshooting.</p>
           </article>
         </div>
 
-        <h3 class="section-title">Key features</h3>
+        <h3 class="section-title" data-i18n="work.postmaster.features.title">Key features</h3>
         <ul>
-          <li>Clear, chronological logs of every message exchange.</li>
-          <li>Support for simple challenge-response checks to test authentication.
-          </li>
-          <li>Messages are saved in a readable transaction format for review.</li>
-          <li>Configurable ports and folders so you can run tests locally.
-          </li>
-          <li>Optional multi-process mode to simulate several clients at once.
-          </li>
+          <li data-i18n="work.postmaster.features.li1">Clear, chronological logs of every message exchange.</li>
+          <li data-i18n="work.postmaster.features.li2">Support for simple challenge-response checks to test authentication.</li>
+          <li data-i18n="work.postmaster.features.li3">Messages are saved in a readable transaction format for review.</li>
+          <li data-i18n="work.postmaster.features.li4">Configurable ports and folders so you can run tests locally.</li>
+          <li data-i18n="work.postmaster.features.li5">Optional multi-process mode to simulate several clients at once.</li>
         </ul>
 
-        <h3 class="section-title">How it works</h3>
+        <h3 class="section-title" data-i18n="work.postmaster.how.title">How it works</h3>
         <div class="case-studies">
           <div class="case">
-            <p><strong>1. Start a session:</strong> The client connects and the
-            server is ready to accept messages.</p>
+            <p data-i18n="work.postmaster.how.step1"></p>
           </div>
           <div class="case">
-            <p><strong>2. Optional authentication:</strong> The client can run a
-            simple challenge-response to verify its identity for testing.
-            </p>
+            <p data-i18n="work.postmaster.how.step2"></p>
           </div>
           <div class="case">
-            <p><strong>3. Deliver the message:</strong> The client sends the
-            message and the server acknowledges and stores the transaction
-            in a readable format.</p>
+            <p data-i18n="work.postmaster.how.step3"></p>
           </div>
           <div class="case">
-            <p><strong>4. Monitor and review:</strong> The monitor can record
-            every line to allow offline review and debugging.</p>
+            <p data-i18n="work.postmaster.how.step4"></p>
           </div>
         </div>
 
-        <h3 class="section-title">Privacy & safety</h3>
-        <p>
-          Post Master aims to avoid keeping data longer than needed. Transaction
-          files are written in a readable format and temporary state can be
-          cleared automatically. Authentication details are used only for
-          session checks; production deployments should use full transport
-          encryption for real-world security.
-        </p>
+        <h3 class="section-title" data-i18n="work.postmaster.privacy.title">Privacy & safety</h3>
+        <p data-i18n="work.postmaster.privacy.p">Post Master aims to avoid keeping data longer than needed. Transaction files are written in a readable format and temporary state can be cleared automatically. Authentication details are used only for session checks; production deployments should use full transport encryption for real-world security.</p>
 
-        <h3 class="section-title">Setup</h3>
+        <h3 class="section-title" data-i18n="work.postmaster.setup.title">Setup</h3>
         <div class="offerings">
           <article class="offer-card">
-            <h4>Language</h4>
-            <p>Written in Python to keep the tools simple and easy to run locally.</p>
+            <h4 data-i18n="work.postmaster.setup.language.title">Language</h4>
+            <p data-i18n="work.postmaster.setup.language.desc">Written in Python to keep the tools simple and easy to run locally.</p>
           </article>
           <article class="offer-card">
-            <h4>Networking</h4>
-            <p>Uses straightforward network connections so common tools can be
-            used for testing and inspection.</p>
+            <h4 data-i18n="work.postmaster.setup.networking.title">Networking</h4>
+            <p data-i18n="work.postmaster.setup.networking.desc">Uses straightforward network connections so common tools can be used for testing and inspection.</p>
           </article>
           <article class="offer-card">
-            <h4>Authentication checks</h4>
-            <p>Includes simple challenge-response checks to test authentication
-            flows during diagnostics.</p>
+            <h4 data-i18n="work.postmaster.setup.auth.title">Authentication checks</h4>
+            <p data-i18n="work.postmaster.setup.auth.desc">Includes simple challenge-response checks to test authentication flows during diagnostics.</p>
           </article>
         </div>
 
-        <h3 class="section-title">Outcomes</h3>
+        <h3 class="section-title" data-i18n="work.postmaster.results.title">Outcomes</h3>
         <div class="case-studies">
           <div class="case">
-            <p><strong>Better visibility:</strong> Readable logs make it much
-            faster to spot and fix message delivery problems.</p>
+            <p data-i18n="work.postmaster.results.li1"></p>
           </div>
           <div class="case">
-            <p><strong>More resilient testing:</strong> The system can simulate
-            multiple clients at once and keep clear, separate logs for each.
-            </p>
+            <p data-i18n="work.postmaster.results.li2"></p>
           </div>
         </div>
 
-        <h3 class="section-title">Try it</h3>
-        <p>
-          To run locally, start the server and client using simple
-          configuration files that set ports and folders. The setup is
-          self-contained and meant for offline testing and inspection.
-        </p>
-
-        <a class="button back-button" href="/work">Back to Work</a>
+        <a class="button back-button" href="/work" data-i18n="work.back">Back to Work</a>
       </section>
     </main>
     

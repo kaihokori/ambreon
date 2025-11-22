@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>404 - Page not found • Ambreon</title>
+    <title data-i18n="meta.notFoundTitle">404 - Page not found • Ambreon</title>
     <link rel="stylesheet" href="./styles/universal.css" />
     <link rel="stylesheet" href="./styles/home.css" />
     <style>
@@ -31,20 +31,20 @@
         </button>
 
         <ul class="right nav-links">
-          <li><a href="/index">Home</a></li>
-          <li><a href="/work">Work</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact" class="hire-us">Book a Call</a></li>
+          <li><a href="/index" data-i18n="nav.home">Home</a></li>
+          <li><a href="/work" data-i18n="nav.work">Work</a></li>
+          <li><a href="/services" data-i18n="nav.services">Services</a></li>
+          <li><a href="/about" data-i18n="nav.about">About</a></li>
+          <li><a href="/contact" class="hire-us" data-i18n="nav.book">Book a Call</a></li>
         </ul>
       </div>
     </nav>
 
     <main class="main">
       <section class="landing error-main" aria-labelledby="error-heading">
-        <h1 id="error-heading" class="error-title significant" class="margin-bottom: 50px;">404</h1>
-        <p class="error-sub heading">Page Not Found</p>
-        <p class="content error-desc">
+        <h1 id="error-heading" class="error-title significant" class="margin-bottom: 50px;" data-i18n="errors.notFound.code">404</h1>
+        <p class="error-sub heading" style="margin: 0 auto;" data-i18n="errors.notFound.title">Page Not Found</p>
+        <p class="content error-desc" style="margin: 0 auto;" data-i18n="errors.notFound.desc">
           The page you're looking for doesn't exist or has been moved. Try
           returning to the homepage or reach out if you think something is
           broken.
@@ -66,7 +66,7 @@
       </div>
 
       <div class="column">
-        <p class="header">Services</p>
+        <p class="header" data-i18n="nav.services">Services</p>
         <ul>
           <li><a href="/service-ai-creation">AI Creation</a></li>
           <li><a href="/service-automation">System Automation</a></li>
@@ -76,7 +76,7 @@
       </div>
 
       <div class="column">
-        <p class="header">Work</p>
+        <p class="header" data-i18n="work.title">Work</p>
         <ul>
           <li><a href="/work-nifty">Nifty</a></li>
           <li><a href="/work-postmaster">Post Master</a></li>

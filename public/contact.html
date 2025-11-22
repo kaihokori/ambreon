@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ambreon - Contact</title>
+  <title data-i18n="meta.contactTitle">Ambreon - Contact</title>
   <link rel="stylesheet" href="styles/universal.css">
   <link rel="stylesheet" href="styles/contact.css">
 </head>
@@ -24,10 +24,10 @@
       </button>
 
       <ul class="right nav-links">
-        <li><a href="/index">Home</a></li>
-        <li><a href="/work">Work</a></li>
-        <li><a href="/services">Services</a></li>
-        <li><a href="/contact" class="hire-us">Book a Call</a></li>
+        <li><a href="/index" data-i18n="nav.home">Home</a></li>
+        <li><a href="/work" data-i18n="nav.work">Work</a></li>
+        <li><a href="/services" data-i18n="nav.services">Services</a></li>
+        <li><a href="/contact" class="hire-us" data-i18n="nav.book">Book a Call</a></li>
       </ul>
     </div>
   </nav>
@@ -35,8 +35,8 @@
     <div class="main">
       <div class="top">
         <div class="column">
-        <h1 class="significant" style="margin-top: 100px; margin-bottom: 20px;">Contact Us</h1>
-        <p style="margin-bottom: 80px">
+        <h1 class="significant" style="margin-top: 100px; margin-bottom: 20px;" data-i18n="contact.title">Contact Us</h1>
+        <p style="margin-bottom: 80px" data-i18n="contact.lead">
           We'd love to hear from you! Whether you have questions about our services,
           want to discuss a project, or have any other inquiries, feel free to reach out.
         </p>
@@ -46,23 +46,23 @@
       <!-- Contact Methods + Form Section -->
       <section class="contact-section">
         <form id="contact-form" class="contact-form" action="#" method="post" novalidate>
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" placeholder="Your name" required>
+          <label for="name" data-i18n="contact.form.name.label">Name</label>
+          <input id="name" name="name" type="text" data-i18n="contact.form.name.placeholder" placeholder="Your name" required>
 
-          <label for="email">Email or Phone Number</label>
-          <input id="email" name="email" type="email" placeholder="Your email or phone number" required>
+          <label for="email" data-i18n="contact.form.email.label">Email or Phone Number</label>
+          <input id="email" name="email" type="email" data-i18n="contact.form.email.placeholder" placeholder="Your email or phone number" required>
 
-          <label for="project">Describe your project</label>
-          <textarea id="project" name="project" rows="6" placeholder="Tell us more details about deadlines, technologies, what type of services you require and other relevant information."></textarea>
+          <label for="project" data-i18n="contact.form.project.label">Describe your project</label>
+          <textarea id="project" name="project" rows="6" data-i18n="contact.form.project.placeholder" placeholder="Tell us more details about deadlines, technologies, what type of services you require and other relevant information."></textarea>
 
-          <label for="ref">How did you hear about us?</label>
-          <input id="ref" name="ref" type="text" placeholder="Google, Twitter, through a friend, etc.">
+          <label for="ref" data-i18n="contact.form.ref.label">How did you hear about us?</label>
+          <input id="ref" name="ref" type="text" data-i18n="contact.form.ref.placeholder" placeholder="Google, Twitter, through a friend, etc.">
           <!-- Honeypot field to reduce spam -->
           <input type="text" name="honeypot" id="honeypot" style="display:none" tabindex="-1" autocomplete="off">
 
           <div class="form-message hidden" id="form-message" aria-hidden="true"></div>
 
-          <button type="submit" class="submit-btn">Submit</button>
+          <button type="submit" class="submit-btn" data-i18n="contact.form.submit">Submit</button>
         </form>
       </section>
     </div>
