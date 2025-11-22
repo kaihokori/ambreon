@@ -21,12 +21,12 @@
   font-size: 1.25rem;
   color: var(--text-grey);
   width: 50%;
-  margin: 0 auto 40px;
+  margin: -20px auto 0;
 }
 
 .stone-image {
   position: relative;
-  margin-top: -100px;
+  margin: -100px 0 100px;
 }
 
 .stone-image::after {
@@ -567,7 +567,7 @@
   }
 
   .header h1:nth-child(2) {
-    margin-top: -20px;
+    margin: -20px 0 20px;
   }
 
   .stone-image img {
@@ -579,6 +579,7 @@
 
   .we-are {
     flex-direction: column;
+    margin-top: -100px;
   }
 
   .we-are img {
