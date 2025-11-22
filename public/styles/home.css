@@ -501,11 +501,10 @@
   gap: 24px;
   justify-content: center;
   align-items: center;
-  /* keep all review cards on a single row on wide screens */
-  flex-wrap: nowrap;
-  /* allow horizontal scrolling if cards exceed container width */
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+  /* allow review cards to wrap to additional rows when space is limited */
+  flex-wrap: wrap;
+  /* ensure wrapping layout uses normal document flow */
+  overflow-x: visible;
 }
 
 /* Hide horizontal scrollbar on smaller screens but keep scrolling functional */
@@ -527,6 +526,10 @@
   flex-direction: column;
   gap: 12px;
   align-items: center;
+  /* flexible sizing so cards wrap onto new rows when needed */
+  flex: 1 1 320px;
+  min-width: 260px;
+  max-width: 360px;
 }
 .review-card img {
   width: 72px;
