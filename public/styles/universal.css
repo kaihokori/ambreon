@@ -410,6 +410,7 @@ footer select {
   background-size: 14px 14px;
   position: relative;
   z-index: 2100;
+  min-width: 100px;
   width: 20%;
 }
 
@@ -535,6 +536,10 @@ footer li a:hover {
 
   .service-card {
     width: 90%;
+  }
+
+  .curved-arrow {
+    display: none;
   }
 }
 

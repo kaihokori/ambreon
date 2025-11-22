@@ -1,6 +1,6 @@
 .top {
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   align-self: center;
   display: block;
 }
@@ -107,7 +107,6 @@ h3 {
 
 .why-us .content {
   margin-bottom: 20px;
-  width: 90%;
   font-size: 1.3rem;
 }
 
