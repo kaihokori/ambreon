@@ -525,4 +525,256 @@ footer li a:hover {
     padding: 0px 40px 40px 40px;
     border-radius: 12px;
   }
+
+  .carousel .service-card:first-child, .carousel .service-card:last-child {
+    display: none;
+  }
+
+  .services-carousel::before, .services-carousel::after {
+    display: none;
+  }
+
+  .service-card {
+    width: 90%;
+  }
+}
+
+/* Services Carousel */
+.services-carousel {
+  /* full-bleed section: span the full viewport width while keeping
+     internal content boxed via padding */
+  width: 100vw;
+  box-sizing: border-box;
+  margin-top: 100px;
+  position: relative;
+  /* center the full-bleed element reliably from inside a centered parent */
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: 40px 4% 0;
+}
+.services-carousel::before,
+.services-carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: clamp(160px, 8vw, 140px);
+  pointer-events: none;
+  z-index: 3;
+  /* smoother multi-stop gradient for a gentle fade */
+  background: linear-gradient(
+    to right,
+    rgba(18, 7, 4,0.95) 0%,
+    rgba(18, 7, 4,0.7) 28%,
+    rgba(18, 7, 4,0.35) 60%,
+    rgba(18, 7, 4,0) 100%
+  );
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+.services-carousel::after {
+  right: 0;
+  left: auto;
+  background: linear-gradient(
+    to left,
+    rgba(18, 7, 4,0.95) 0%,
+    rgba(18, 7, 4,0.7) 28%,
+    rgba(18, 7, 4,0.35) 60%,
+    rgba(18, 7, 4,0) 100%
+  );
+}
+.services-carousel::before {
+  left: 0;
+  right: auto;
+}
+
+/* Ensure carousel content sits under the overlays while the heading stays above */
+.services-carousel .carousel {
+  position: relative;
+  z-index: 2;
+}
+.services-carousel h2 {
+  position: relative;
+  z-index: 4;
+}
+.services-carousel h2 {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin: 0 auto 18px;
+  text-align: center;
+}
+.carousel {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  padding: 18px 6px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.service-card {
+  flex: 0 0 270px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  scroll-snap-align: center;
+}
+.carousel .service-card:first-child {
+  /* push the first card right so it's not hidden under the left blur overlay */
+  margin-left: clamp(60px, 8vw, 140px);
+}
+
+.carousel .service-card:last-child {
+  /* push the last card left so it's not hidden under the right blur overlay */
+  margin-right: clamp(60px, 8vw, 140px);
+}
+
+.service-card img {
+  width: 48px;
+  height: 48px;
+}
+.service-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 0;
+}
+.service-desc {
+  color: var(--text-grey);
+  font-size: 0.95rem;
+  margin: 0 0 8px 0;
+  text-align: left;
+}
+.see-details {
+  margin-top: auto;
+  align-self: stretch;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--accent-color);
+  border: 1px solid rgba(255,255,255,0.06);
+  background: transparent;
+  font-weight: 600;
+}
+.see-details img {
+  width: 16px;
+  height: 16px;
+}
+
+/* Hide scrollbars but keep scrolling functional across browsers */
+.carousel {
+  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.carousel::-webkit-scrollbar {
+  display: none; /* Safari/Chrome */
+  height: 0;
+}
+
+/* Carousel arrow buttons */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.45);
+  border: 1px solid rgba(255,255,255,0.06);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 6;
+  cursor: pointer;
+  transition: background 150ms ease, transform 120ms ease;
+}
+.carousel-button img {
+  width: 18px;
+  height: 18px;
+  display: block;
+  filter: brightness(1.25) invert(1) hue-rotate(180deg);
+}
+.carousel-button:focus {
+  outline: 3px solid rgba(255,255,255,0.08);
+  transform: translateY(-50%) scale(1.02);
+}
+.carousel-button:hover {
+  background: rgba(0,0,0,0.6);
+}
+.carousel-prev {
+  left: clamp(12px, 2vw, 28px);
+}
+.carousel-next {
+  right: clamp(12px, 2vw, 28px);
+}
+.carousel-prev img { transform: rotate(180deg); }
+
+@media (max-width: 768px) {
+  /* hide arrow buttons on narrow screens where carousel stacks */
+  .carousel-button { display: none; }
+}
+
+/* Disabled state for carousel buttons */
+.carousel-button[disabled],
+.carousel-button[aria-disabled="true"] {
+  opacity: 0.36;
+  cursor: not-allowed;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.28);
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  /* Stack carousel into a column on small screens so cards don't grow too wide */
+  .services-carousel {
+    /* keep full-bleed on mobile but reduce vertical spacing */
+    padding: 24px 4%;
+    margin-top: 40px;
+  }
+  /* reduce overlay width on small screens and soften effect */
+  .services-carousel::before,
+  .services-carousel::after {
+    width: clamp(36px, 10vw, 80px);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    background: linear-gradient(to right, rgba(28,16,14,0.9), rgba(28,16,14,0));
+  }
+  /* avoid pushing the first card on narrow screens where cards stack */
+  .carousel .service-card:first-child {
+    margin-left: 0;
+  }
+
+  .services-carousel h2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow-x: visible;
+    padding: 0;
+  }
+
+  .service-card {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: none;
+    padding: 20px;
+    align-items: flex-start;
+    scroll-snap-align: none;
+  }
+
+  .see-details {
+    align-self: flex-start;
+  }
 }

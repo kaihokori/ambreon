@@ -657,18 +657,6 @@
     padding: 20px 60px;
   }
 
-  .carousel .service-card:first-child, .carousel .service-card:last-child {
-    display: none;
-  }
-
-  .services-carousel::before, .services-carousel::after {
-    display: none;
-  }
-
-  .service-card {
-    width: 90%;
-  }
-
   .review-card {
     width: 90%;
   }
