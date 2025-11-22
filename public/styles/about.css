@@ -17,13 +17,22 @@
   margin: 12px auto 0 auto;
 }
 
+.quote {
+  font-size: 1.3rem;
+  color: var(--text-grey);
+  max-width: 650px;
+  margin: 0 auto;
+}
+
 .about-hero {
   max-width: 1100px;
   margin: 40px 150px 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 40px;
   align-items: center;
+  width: 80%;
+  max-width: 800px;
 }
 
 .about-hero img {
@@ -81,6 +90,31 @@ h3 {
 
 .cta-row { margin: 32px 150px; }
 
+.why-us {
+  margin: 100px auto 0;
+  width: 80%;
+  max-width: 800px;
+  padding: 0 10%;
+  gap: 80px;
+  align-items: center;
+}
+
+.why-us .heading-alt {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+
+.why-us .content {
+  margin-bottom: 20px;
+  width: 90%;
+  font-size: 1.3rem;
+}
+
+.why-us .content:last-child {
+  margin-bottom: 0;
+}
+
 @media (max-width: 1000px) {
   .about-hero { grid-template-columns: 1fr; margin: 28px 24px; }
   .about-hero img { height: 220px; }
@@ -93,4 +127,24 @@ h3 {
   .team { grid-template-columns: 1fr; }
   .values { grid-template-columns: 1fr; }
   .significant { font-size: 3rem; }
+  .why-us {
+    flex-direction: column;
+    gap: 20px;
+    max-width: none;
+    padding: 0 20px;
+    margin: 100px auto 0;
+  }
+
+  .why-us img {
+    width: 100%;
+    height: 300px;
+    aspect-ratio: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .why-us .right {
+    align-items: flex-start;
+    margin: 0;
+  }
 }

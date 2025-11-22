@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./styles/about.css" />
   </head>
   <body>
+    <!-- Circle -->
+    <div class="circle"></div>
+    <div class="circle additional"></div>
+
     <!-- Navbar (copied from index for consistent navigation) -->
     <nav>
       <div class="nav-inner">
@@ -27,9 +31,9 @@
 
         <ul class="right nav-links">
           <li><a href="/index">Home</a></li>
-          <li><a href="/about">About</a></li>
           <li><a href="/work">Work</a></li>
           <li><a href="/services">Services</a></li>
+          <li><a href="/about">About</a></li>
           <li><a href="/contact" class="hire-us">Book a Call</a></li>
         </ul>
       </div>
@@ -37,27 +41,26 @@
 
     <div class="main">
       <section class="top">
-        <h1 class="significant">About Ambreon</h1>
-        <p>
-          We design and build software that helps organisations deliver better
-          products, faster. Our team blends engineering, design, and strategy
-          to solve hard problems and make products people love.
-        </p>
+        <img src="./assets/icons/logo.svg" alt="Ambreon Logo" style="margin-top: 20px; width: 50%; max-width: 800px;" />
       </section>
 
       <section class="about-hero">
         <div>
-          <p class="key">Who we are</p>
-          <h2 class="heading">A small team, big outcomes</h2>
-          <p class="content">
-            We partner with ambitious teams to create resilient, scalable
-            products. From initial discovery to ongoing maintenance, we focus
-            on measurable outcomes and thoughtful craftsmanship.
+          <h2 class="heading" style="text-align: center; margin-bottom: 20px;">About Us</h2>
+          <p class="content" style="font-size: 1.3rem;">
+            At Ambreon, we believe technology should be clear, powerful, and built to last. Inspired by amber, known for its clarity and its ability to preserve what matters. We focus on creating digital solutions that stay strong, relevant, and reliable long into the future.
+          </p>
+          <p class="content" style="margin-top: 50px; font-size: 1.3rem;">
+            We design systems that protect your ideas, elevate your business, and support long-lasting growth. Every solution we build is crafted with purpose, engineered with precision, and shaped to endure as your goals evolve.
           </p>
         </div>
-        <div>
-          <img src="./assets/other/landscape.png" alt="Team working" />
-        </div>
+      </section>
+
+      <section class="about-vision" style="margin-top: 100px;">
+        <h3>Our vision</h3>
+        <p class="quote">
+          "To empower organisations to build exceptional digital products that drive meaningful impact, through innovative technology solutions and collaborative partnerships."
+        </p>
       </section>
 
       <section class="about-mission" style="margin-top: 100px;">
@@ -79,114 +82,38 @@
         </div>
       </section>
 
-      <!-- Services Carousel -->
-      <section class="services-carousel" aria-label="Our services">
-        <h2>Our Services</h2>
-        <button class="carousel-button carousel-prev" aria-label="Scroll services left">
-          <img src="./assets/icons/right_arrow.svg" alt=""/>
-        </button>
-        <button class="carousel-button carousel-next" aria-label="Scroll services right">
-          <img src="./assets/icons/right_arrow.svg" alt=""/>
-        </button>
-        <div class="carousel" role="list">
-          <article class="service-card" role="listitem">
-            <img src="./assets/icons/ai.svg" alt="AI Creation icon" />
-            <p class="service-title">AI Creation</p>
-            <p class="service-desc">Custom AI models and automation for smarter products.</p>
-            <a href="/service-ai-creation" class="see-details">See Details
-              <img src="./assets/icons/right_arrow.svg" alt="right arrow"/>
-            </a>
-          </article>
+      <!-- Why Us Section -->
 
-          <article class="service-card" role="listitem">
-            <img src="./assets/icons/automation.svg" alt="System Automation icon" />
-            <p class="service-title">Automation</p>
-            <p class="service-desc">Workflow automation that saves time and reduces errors.</p>
-            <a href="/service-automation" class="see-details">See Details
-              <img src="./assets/icons/right_arrow.svg" alt="right arrow"/>
-            </a>
-          </article>
-
-          <article class="service-card" role="listitem">
-            <img src="./assets/icons/website.svg" alt="Website Creation icon" />
-            <p class="service-title">Websites</p>
-            <p class="service-desc">Fast, accessible websites tailored to your brand.</p>
-            <a href="/service-website" class="see-details">See Details
-              <img src="./assets/icons/right_arrow.svg" alt="right arrow"/>
-            </a>
-          </article>
-
-          <article class="service-card" role="listitem">
-            <img src="./assets/icons/mobile.svg" alt="Mobile App icon" />
-            <p class="service-title">Mobile Apps</p>
-            <p class="service-desc">iOS & Android apps built for scale and performance.</p>
-            <a href="/service-mobile" class="see-details">See Details
-              <img src="./assets/icons/right_arrow.svg" alt="right arrow"/>
-            </a>
-          </article>
-
-          <article class="service-card" role="listitem">
-            <img src="./assets/icons/swift.svg" alt="iOS Native Apps icon" />
-            <p class="service-title">iOS Native Apps</p>
-            <p class="service-desc">High-performance iPhone apps using Swift and SwiftUI.</p>
-            <a href="/service-ios" class="see-details">See Details
-              <img src="./assets/icons/right_arrow.svg" alt="right arrow"/>
-            </a>
-          </article>
-
-          <article class="service-card" role="listitem">
-            <img src="./assets/icons/server.svg" alt="Backend Development icon" />
-            <p class="service-title">Backend</p>
-            <p class="service-desc">Robust server-side systems and APIs.</p>
-            <a href="/service-backend" class="see-details">See Details
-              <img src="./assets/icons/right_arrow.svg" alt="right arrow"/>
-            </a>
-          </article>
-
-          <article class="service-card" role="listitem">
-            <img src="./assets/icons/java.svg" alt="Java Development icon" />
-            <p class="service-title">Java</p>
-            <p class="service-desc">Enterprise-grade applications built with Java.</p>
-            <a href="/service-java" class="see-details">See Details
-              <img src="./assets/icons/right_arrow.svg" alt="right arrow"/>
-            </a>
-          </article>
-
-          <article class="service-card" role="listitem">
-            <img src="./assets/icons/python.svg" alt="Python Development icon" />
-            <p class="service-title">Python</p>
-            <p class="service-desc">Data-driven solutions and automation with Python.</p>
-            <a href="/service-python" class="see-details">See Details
-              <img src="./assets/icons/right_arrow.svg" alt="right arrow"/>
-            </a>
-          </article>
-
-          <article class="service-card" role="listitem">
-            <img src="./assets/icons/uiux.svg" alt="UI/UX Design icon" />
-            <p class="service-title">UI/UX Design</p>
-            <p class="service-desc">Human-centered interfaces that delight users.</p>
-            <a href="/service-uiux" class="see-details">See Details
-              <img src="./assets/icons/right_arrow.svg" alt="right arrow"/>
-            </a>
-          </article>
-
-          <article class="service-card" role="listitem">
-            <img src="./assets/icons/consulting.svg" alt="Consulting icon" />
-            <p class="service-title">Consulting</p>
-            <p class="service-desc">Strategy, architecture and delivery planning.</p>
-            <a href="/service-consulting" class="see-details">See Details
-              <img src="./assets/icons/right_arrow.svg" alt="right arrow"/>
-            </a>
-          </article>
-
-          <article class="service-card" role="listitem">
-            <img src="./assets/icons/marketing.svg" alt="Marketing icon" />
-            <p class="service-title">Marketing</p>
-            <p class="service-desc">Growth and acquisition strategies for digital products.</p>
-            <a href="/service-marketing" class="see-details">See Details
-              <img src="./assets/icons/right_arrow.svg" alt="right arrow"/>
-            </a>
-          </article>
+      <section class="why-us">
+        <div class="left">
+        </div>
+        <div class="right">
+          <h2>Why Choose Us</h2>
+          <p class="heading-alt">Expertise</p>
+          <p class="content">
+            Our team of seasoned professionals brings a wealth of experience
+            across diverse industries and technologies.
+          </p>
+          <p class="heading-alt">Innovation</p>
+          <p class="content">
+            We leverage the latest technologies and methodologies to deliver
+            cutting-edge solutions that drive business growth.
+          </p>
+          <p class="heading-alt">Customization</p>
+          <p class="content">
+            We tailor our services to meet your unique business needs, ensuring
+            optimal results and satisfaction.
+          </p>
+          <p class="heading-alt">Collaboration</p>
+          <p class="content">
+            We work closely with you throughout the development process,
+            fostering transparency and open communication.
+          </p>
+          <p class="heading-alt">Support</p>
+          <p class="content">
+            We provide ongoing support and maintenance to ensure your software
+            remains up-to-date and performs optimally.
+          </p>
         </div>
       </section>
 

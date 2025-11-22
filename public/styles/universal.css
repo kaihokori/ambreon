@@ -411,7 +411,6 @@ footer select {
   position: relative;
   z-index: 2100;
   width: 20%;
-  display: none;
 }
 
 footer select:hover {
