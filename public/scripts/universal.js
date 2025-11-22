@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Services carousel arrow controls — toggle disabled at ends
     (function initServiceCarousel() {
         const sections = document.querySelectorAll('.services-carousel');
         sections.forEach(section => {

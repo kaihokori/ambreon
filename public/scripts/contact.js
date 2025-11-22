@@ -44,10 +44,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams)
                 .then(function(response) {
-                    if (msgEl) msgEl.textContent = 'Message sent — thank you!';
+                    if (msgEl) msgEl.textContent = 'Message sent. Thank you!';
                     contactForm.reset();
                 }, function(error) {
-                    if (msgEl) msgEl.textContent = 'Sorry — something went wrong. Please try again or email us directly.';
+                    if (msgEl) msgEl.textContent = 'Sorry. Something went wrong. Please try again or email us directly.';
                     console.error('EmailJS error', error);
                 })
                 .finally(function() {
