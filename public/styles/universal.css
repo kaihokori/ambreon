@@ -385,10 +385,11 @@ footer .column:first-child {
 
 footer .column:first-child select {
   order: -1;
+  margin-top: auto;
 }
 
 footer .column:first-child p {
-  margin-top: auto;
+  margin-top: 10px;
   color: var(--text-grey);
 }
 
@@ -780,5 +781,61 @@ footer li a:hover {
 
   .see-details {
     align-self: flex-start;
+  }
+}
+
+/* Footer responsive reflow: keep Services + Work side-by-side and
+   place language select + copyright beneath them on small screens */
+@media (max-width: 768px) {
+  footer {
+    /* allow precise ordering and consistent spacing */
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  /* Make Services and Work columns sit side-by-side */
+  footer .column {
+    flex: 1 1 50%;
+    min-width: 45%;
+    box-sizing: border-box;
+  }
+
+  /* Put the language/copyright column below the two columns */
+  footer .column:first-child {
+    order: 2;
+    flex: 1 1 100%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 12px;
+  }
+
+  /* Ensure Services and Work are the first row */
+  footer .column:nth-child(2),
+  footer .column:nth-child(3) {
+    order: 1;
+  }
+
+  /* Restore select ordering and spacing for the stacked layout */
+  footer .column:first-child select {
+    order: 0;
+    margin-top: 12px;
+    width: auto;
+    min-width: 160px;
+  }
+
+  /* Reduce padding so the two columns fit nicely on narrow viewports */
+  footer {
+    padding: 40px 6% 60px;
+  }
+
+  /* On very narrow devices, stack everything to one column to keep readability */
+  @media (max-width: 480px) {
+    footer .column { flex: 1 1 100%; min-width: 100%; }
+    footer .column:first-child { order: 3; }
+    footer .column:nth-child(2), footer .column:nth-child(3) { order: 1; }
   }
 }
