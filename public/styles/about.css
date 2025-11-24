@@ -147,3 +147,51 @@ h3 {
     margin: 0;
   }
 }
+
+/* Meet the Team styles */
+.meet-team {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 10%;
+  text-align: center;
+}
+.meet-team h2 {
+  font-size: 2rem;
+  margin-bottom: 28px;
+}
+.team-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.team-member {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  padding: 28px;
+  border-radius: 16px;
+  width: 360px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  text-align: center;
+}
+.team-member img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+.team-member h4 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+.team-member p { color: var(--text-grey); margin: 0; }
+
+@media (max-width: 700px) {
+  .team-member { width: 100%; max-width: 420px; padding: 20px; }
+  .team-member img { width: 140px; height: 140px; }
+}

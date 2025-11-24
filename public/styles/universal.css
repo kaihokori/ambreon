@@ -373,14 +373,22 @@ footer {
   flex-wrap: wrap;
 }
 
+/* Center align content inside each footer column */
 footer .column {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 footer .column:first-child {
   flex: 5;
+  /* keep column stacked and centered */
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 footer .column:first-child select {
@@ -821,7 +829,7 @@ footer li a:hover {
 
   /* Restore select ordering and spacing for the stacked layout */
   footer .column:first-child select {
-    order: 0;
+    order: -1;
     margin-top: 12px;
     width: auto;
     min-width: 160px;
