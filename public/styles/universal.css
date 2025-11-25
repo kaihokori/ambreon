@@ -460,6 +460,24 @@ footer li a:hover {
 }
 
 /* Responsive Controls */
+/* Reduce navigation gap and button padding on narrower desktop widths */
+@media (min-width: 769px) and (max-width: 980px) {
+  .nav-inner {
+    margin: 0 6%;
+  }
+  .nav-links {
+    gap: 16px;
+  }
+  .nav-links li a {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+  }
+  .nav-links .hire-us {
+    padding: 8px 14px;
+    margin-left: 6px;
+    white-space: nowrap;
+  }
+}
 
 @media (max-width: 768px) {
   nav {
