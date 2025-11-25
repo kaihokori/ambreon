@@ -112,14 +112,18 @@
 }
 
 .work .example .left {
-  flex: 1;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: stretch;
 }
 
-.work .example img {
+.work .example img,
+.work .example video {
   border-radius: 20px 0 0 20px;
-  width: 100%;
+  width: auto;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .work .example p:last-child {
@@ -378,10 +382,12 @@
     flex-direction: column;
     height: auto;
   }
-
-  .work .example img {
+  .work .example img,
+  .work .example video {
     border-radius: 20px 20px 0 0;
     height: 300px;
+    width: 100%;
+    object-fit: cover;
   }
 
   .work .example .right {
