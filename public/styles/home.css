@@ -348,14 +348,27 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1;
-  vertical-align: middle;
+}
+
+/* Ensure the part after the split moves to a new line */
+.header h1 .hero-rest,
+.landing h1 .hero-rest {
+  display: block;
+  /* match large heading styles so the split line keeps the intended size */
+  font-size: 8rem;
+  margin-top: -20px;
+  background: linear-gradient(to bottom, #fff, #fff, rgba(255,255,255,0.4));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
 }
 
 @media (max-width: 768px) {
   .landing h1 {
     line-height: 1;
     margin-top: 50px;
-    font-size: 2rem; 
+    font-size: 2.5rem; 
     /* font-size: 4rem;  */
     /* margin: 0 0 40px; */
   }
@@ -364,6 +377,16 @@
     /* scale down on small screens so it doesn't overflow */
     font-size: 3rem;
     margin-top: 0;
+  }
+
+  .landing h1 .hero-rest,
+  .header h1 .hero-rest {
+    font-size: 4rem;
+    margin-top: 0;
+  }
+
+  .landing p {
+    width: 80%;
   }
 
   .stone-image img {
