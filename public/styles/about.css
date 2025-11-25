@@ -71,6 +71,11 @@ h3 {
   margin: 0 0 8px 0;
 }
 
+.value-card p {
+  color: var(--text-grey);
+  margin: 0;
+}
+
 .team {
   max-width: 1100px;
   margin: 40px 150px;

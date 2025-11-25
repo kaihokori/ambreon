@@ -378,17 +378,17 @@ footer .column {
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
 }
 
 footer .column:first-child {
   flex: 5;
-  /* keep column stacked and centered */
+  /* keep column stacked and left-aligned */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
 }
 
 footer .column:first-child select {
@@ -816,8 +816,8 @@ footer li a:hover {
     min-width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     margin-top: 12px;
   }
 
