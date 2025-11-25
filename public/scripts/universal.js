@@ -330,7 +330,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         fr: 'IA + Développement de flux de travail',
                         id: 'AI + Pengembangan Alur Kerja'
                     },
-                    heading: { en: 'Nifty', de: 'Nifty', es: 'Nifty', fr: 'Nifty', id: 'Nifty' },
+                    heading: { en: 'WhatsApp AI Chatbot', de: 'WhatsApp AI Chatbot', es: 'WhatsApp AI Chatbot', fr: 'WhatsApp AI Chatbot', id: 'WhatsApp AI Chatbot' },
                     content: {
                         en: 'An AI-powered chatbot designed to streamline hotel customer service, enhancing guest experiences through instant, personalized interactions for bookings, inquiries, and support.',
                         de: 'Ein KI-basierter Chatbot zur Optimierung des Hotelkundenservice, der Gästeerlebnisse durch sofortige, personalisierte Interaktionen für Buchungen, Anfragen und Support verbessert.',
