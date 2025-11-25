@@ -308,8 +308,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             },
             hero: {
-                line1: { en: 'Technology Becomes', de: 'Technologie Wird', es: 'La tecnología se vuelve', fr: 'La technologie devient', id: 'Teknologi Menjadi' },
-                line2: { en: 'Timeless', de: 'Zeitlos', es: 'Atemporal', fr: 'Intemporelle', id: 'Abadi' },
+                line: { en: 'Technology Becomes Timeless', de: 'Technologie Wird Zeitlos', es: 'La tecnología se vuelve Atemporal', fr: 'La technologie devient Intemporelle', id: 'Teknologi Menjadi Abadi' },
                 lead: { en: 'Your trusted partner for innovative software design and development solutions.', de: 'Ihr vertrauenswürdiger Partner für innovative Software-Design- und Entwicklungslösungen.', es: 'Su socio de confianza para soluciones innovadoras de diseño y desarrollo de software.', fr: 'Votre partenaire de confiance pour des solutions innovantes de conception et de développement logiciel.', id: 'Mitra tepercaya Anda untuk solusi desain dan pengembangan perangkat lunak yang inovatif.' },
                 more: { en: 'More examples', de: 'Mehr Beispiele', es: 'Más ejemplos', fr: 'Plus d\'exemples', id: 'Lebih banyak contoh' }
             },
@@ -1053,6 +1052,27 @@ document.addEventListener('DOMContentLoaded', function() {
             return cur[lang] || cur['en'] || null;
         }
 
+        function wrapThirdWordOnce() {
+            try {
+                const h = document.querySelector('.landing .header h1.significant');
+                if (!h) return;
+                // If we've already wrapped, do nothing
+                if (h.querySelector('.third-word')) return;
+                // split on whitespace so this works with translated content
+                const parts = h.textContent.trim().split(/\s+/);
+                if (parts.length < 3) return;
+                const third = parts[2];
+                // rebuild safe text with the third word wrapped
+                const rebuilt = parts.map((w, i) => {
+                    if (i === 2) return `<span class="third-word">${w}</span>`;
+                    return w;
+                }).join(' ');
+                h.innerHTML = rebuilt;
+            } catch (e) {
+                // ignore errors to avoid breaking other scripts
+            }
+        }
+
         function applyLanguage(lang) {
             if (!lang) return;
             try { document.documentElement.lang = lang; } catch (e) { /* ignore */ }
@@ -1087,6 +1107,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const stored = localStorage.getItem(LANG_KEY);
         const initial = stored || (document.documentElement.lang || navigator.language || 'en').slice(0,2);
         applyLanguage(initial);
+        // Ensure third-word wrapping runs after initial translation
+        wrapThirdWordOnce();
 
         // attach change handlers
         selects.forEach(s => {
@@ -1094,6 +1116,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 const val = String(this.value || '').slice(0,2);
                 localStorage.setItem(LANG_KEY, val);
                 applyLanguage(val);
+                // re-run wrapper after translations change
+                wrapThirdWordOnce();
             });
         });
     })();
