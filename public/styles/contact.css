@@ -78,8 +78,9 @@
 
 /* Contact section & form */
 .contact-section {
-  max-width: 1100px;
-  margin: 40px 150px;
+  width: 80%;
+  margin: 40px 0;
+  padding: 0 24px;
   color: var(--text);
 }
 
@@ -147,10 +148,14 @@
 }
 
 .contact-form {
+  display: flex;
   flex-direction: column;
   gap: 14px;
   text-align: left;
-  width: 90%;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .contact-form label {

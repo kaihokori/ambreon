@@ -65,8 +65,11 @@
           <label for="email" data-i18n="contact.form.email.label">Email or Phone Number</label>
           <input id="email" name="email" type="email" data-i18n="contact.form.email.placeholder" placeholder="Your email or phone number" required>
 
+          <label for="services" data-i18n="contact.form.services.label">Which services do you need?</label>
+          <input id="services" name="services" type="text" data-i18n="contact.form.services.placeholder" placeholder="E.g. Website, Mobile app, AI Creation, Backend" />
+
           <label for="project" data-i18n="contact.form.project.label">Describe your project</label>
-          <textarea id="project" name="project" rows="6" data-i18n="contact.form.project.placeholder" placeholder="Tell us more details about deadlines, technologies, what type of services you require and other relevant information."></textarea>
+          <textarea id="project" name="project" rows="6" data-i18n="contact.form.project.placeholder" placeholder="Describe scope, goals, constraints, timeline, and expected deliverables."></textarea>
 
           <label for="ref" data-i18n="contact.form.ref.label">How did you hear about us?</label>
           <input id="ref" name="ref" type="text" data-i18n="contact.form.ref.placeholder" placeholder="Google, Twitter, through a friend, etc.">
@@ -148,6 +151,8 @@
         </ul>
       </div> -->
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./scripts/contact.js"></script>
     <script src="./scripts/universal.js"></script>
   </body>
 </html>

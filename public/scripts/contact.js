@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
   const contactForm = document.querySelector('#contact-form');
     if (contactForm && window.emailjs) {
+        // EmailJS v4 expects an init call with an object containing `publicKey`
         try {
-            emailjs.init('abVGTM5SPduJoXhYL');
+            emailjs.init({ publicKey: 'abVGTM5SPduJoXhYL' });
         } catch (err) {
-
+            console.warn('EmailJS init failed', err);
         }
 
         const SERVICE_ID = 'service_imfd129';
@@ -21,14 +22,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 const nameVal = contactForm.name.value || '';
                 const emailVal = contactForm.email.value || '';
+                const servicesVal = contactForm.services ? contactForm.services.value || '' : '';
                 const projectVal = contactForm.project.value || '';
                 const refVal = contactForm.ref.value || '';
 
-                const composed = `Name: ${nameVal}\nEmail: ${emailVal}\n\nProject description:\n${projectVal}\n\nHeard about us via: ${refVal}`;
+                const composed = `Name: ${nameVal}\nEmail: ${emailVal}\n\nServices requested:\n${servicesVal}\n\nProject description:\n${projectVal}\n\nHeard about us via: ${refVal}`;
 
                 const templateParams = {
                     from_name: nameVal,
                     from_email: emailVal,
+                    services: servicesVal,
                     project: projectVal,
                     ref: refVal,
                     message: composed
