@@ -329,7 +329,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         fr: 'IA + Développement de flux de travail',
                         id: 'AI + Pengembangan Alur Kerja'
                     },
-                    heading: { en: 'WhatsApp Automation Chatbot', de: 'WhatsApp Automation Chatbot', es: 'WhatsApp Automation Chatbot', fr: 'WhatsApp Automation Chatbot', id: 'WhatsApp Automation Chatbot' },
+                    heading: { en: 'WhatsApp automation chatbot', de: 'WhatsApp Automation Chatbot', es: 'WhatsApp Automation Chatbot', fr: 'WhatsApp Automation Chatbot', id: 'WhatsApp Automation Chatbot' },
                     content: {
                         en: 'An AI-powered chatbot designed to streamline customer service for customer-facing businesses, enhancing customer experiences through instant, personalized interactions for bookings, inquiries, and support.',
                         de: 'Ein KI-basierter Chatbot zur Optimierung des Kundenservice, der Kundenerfahrungen durch sofortige, personalisierte Interaktionen für Buchungen, Anfragen und Support verbessert.',
@@ -340,7 +340,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 nifty: {
                     key: { en: 'AI + WhatsApp Integration', de: 'KI + WhatsApp-Integration', es: 'IA + Integración de WhatsApp', fr: 'IA + Intégration WhatsApp', id: 'AI + Integrasi WhatsApp' },
-                    heading: { en: 'WhatsApp Automation Chatbot', de: 'WhatsApp Automation Chatbot', es: 'WhatsApp Automation Chatbot', fr: 'WhatsApp Automation Chatbot', id: 'WhatsApp Automation Chatbot' },
+                    heading: { en: 'WhatsApp automation chatbot', de: 'WhatsApp Automation Chatbot', es: 'WhatsApp Automation Chatbot', fr: 'WhatsApp Automation Chatbot', id: 'WhatsApp Automation Chatbot' },
                     content: { en: 'A friendly WhatsApp assistant that helps customer-facing businesses handle bookings, questions, and requests. Giving fast, personal replies whenever customers need them.', de: 'Ein freundlicher WhatsApp-Assistent, der kundenorientierten Unternehmen bei Buchungen, Fragen und Anfragen hilft. Schnelle, persönliche Antworten, wann immer Kunden sie benötigen.', es: 'Un asistente amistoso de WhatsApp que ayuda a empresas orientadas al cliente con reservas, preguntas y solicitudes. Respuestas rápidas y personalizadas cuando los clientes las necesiten.', fr: 'Un assistant WhatsApp convivial qui aide les entreprises orientées client pour les réservations, les questions et les demandes. Des réponses rapides et personnalisées lorsque les clients en ont besoin.', id: 'Asisten WhatsApp yang ramah membantu bisnis yang melayani pelanggan dengan pemesanan, pertanyaan, dan permintaan. Memberikan respons cepat dan personal kapan pun pelanggan membutuhkannya.' }
                     ,
                     lead: { en: "An automated helper that makes customer support and bookings easier for customer-facing businesses.", de: "Ein automatisierter Helfer, der den Kundensupport und Buchungen für kundenorientierte Unternehmen vereinfacht.", es: "Un ayudante automatizado que facilita el soporte al cliente y las reservas para empresas orientadas al cliente.", fr: "Un assistant automatisé qui facilite le support client et les réservations pour les entreprises orientées client.", id: "Asisten otomatis yang memudahkan dukungan pelanggan dan pemesanan untuk bisnis yang melayani pelanggan." },
