@@ -26,14 +26,14 @@
   font-size: 1.2rem;
   color: var(--text-color);
 }
+
 .top p a:focus,
 .top p a:hover {
-  color: inherit;
+  color: var(--accent-color);
   text-decoration: none;
 }
 
 .top span {
-  font-weight: bold;
   font-size: 1.2rem;
 }
 
