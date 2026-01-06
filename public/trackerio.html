@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trackerio - Legal & Privacy Center</title>
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --bg-color: #f2f2f7;
+            --text-color: #1c1c1e;
+            --card-bg: #ffffff;
+            --border-color: #d1d1d6;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        .header {
+            text-align: center;
+            padding: 30px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .logo {
+            max-width: 120px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .nav-container {
+            display: flex;
+            background: #e5e5ea;
+            padding: 4px;
+            margin: 20px;
+            border-radius: 8px;
+        }
+        .nav-btn {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            background: transparent;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .nav-btn.active {
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            color: var(--primary-color);
+        }
+        .content {
+            padding: 0 30px 40px;
+        }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        h2 { border-bottom: 1px solid var(--border-color); padding-bottom: 8px; margin-top: 30px; }
+        h3 { color: #3a3a3c; margin-top: 25px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .disclaimer-block {
+            background: #fff9e6;
+            border-left: 4px solid #ffcc00;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 0.95em;
+        }
+        .footer {
+            background: #f8f8f8;
+            padding: 30px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #636366;
+            border-top: 1px solid var(--border-color);
+        }
+        .source-tag { font-size: 0.75em; color: #aeaeb2; vertical-align: super; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <img src="./assets/ext/trackerio.png" alt="Trackerio" class="logo">
+        <h1>Legal & Privacy Center</h1>
+    </div>
+
+    <div class="nav-container">
+        <button class="nav-btn active" onclick="switchTab('terms')">Terms of Use</button>
+        <button class="nav-btn" onclick="switchTab('privacy')">Privacy Policy</button>
+    </div>
+
+    <div class="content">
+        <div id="terms" class="tab-content active">
+            <p><strong>Last updated:</strong> 24th December, 2024</p>
+            
+            <h2>1. Acceptance of Terms</h2>
+            <p>By downloading, accessing, or using Trackerio, you agree to be bound by these Terms of Use and all applicable laws and regulations. By accessing or using Trackerio, you agree to be bound by these Terms & Conditions. If you do not agree, you may not use the app.</p>
+
+            <h2>2. Use of the App</h2>
+            <p>You agree to:</p>
+            <ul>
+                <li>Use Trackerio only for lawful and personal purposes.</li>
+                <li>Not misuse or attempt to disrupt app functionality.</li>
+                <li>Not reverse engineer, copy, or modify the app.</li>
+                <li>Not upload harmful, illegal, or abusive content.</li>
+                <li>Use the website legally and ethically.</li>
+                <li>Not engage in harmful or malicious activities.</li>
+                <li>Not attempt to copy, modify, or distribute website content without permission.</li>
+            </ul>
+            <p>You are responsible for all activities under your account.</p>
+
+            <h2>3. Intellectual Property</h2>
+            <p>All features, logos, code, images, and materials in Trackerio are owned by Trackerio unless stated otherwise. Unauthorized use, reproduction, or distribution is prohibited. All content, logos, images, and materials on this website are owned by Trackerio unless stated otherwise. Unauthorized use is prohibited.</p>
+
+            <h2>4. User Accounts</h2>
+            <p>If Trackerio requires an account:</p>
+            <ul>
+                <li>You must provide accurate information.</li>
+                <li>You are responsible for keeping your credentials secure.</li>
+                <li>You must notify us of any unauthorized access.</li>
+                <li>You are responsible for maintaining confidentiality of your login credentials and any activities under your account.</li>
+            </ul>
+            <p>We may terminate accounts that violate these Terms.</p>
+
+            <h2>5. Limitation of Liability</h2>
+            <p>Trackerio is provided on an as-is basis. We are not liable for:</p>
+            <ul>
+                <li>Inaccurate data entries.</li>
+                <li>Loss of data.</li>
+                <li>Decisions made based on app insights.</li>
+                <li>Service interruptions or technical issues.</li>
+                <li>Damages caused by third parties.</li>
+            </ul>
+            <p>Using Trackerio or our website is at your own risk.</p>
+
+            <h2>6. Termination</h2>
+            <p>We may suspend or terminate access if you violate these Terms, abuse the app, or attempt unauthorized access or harm to the platform. You may delete your account at any time.</p>
+
+            <div class="disclaimer-block">
+                <h2>7. Health & Wellness Disclaimer</h2>
+                <p>Trackerio provides wellness and tracking features but is not a medical service. It should not be used for diagnosing, treating, or monitoring medical conditions. Consult a healthcare professional before changing diet, exercise, or supplement routines.</p>
+                <p>The app is not a medical device and should not be used as a substitute for professional medical advice. Information in the app is for general wellness and educational purposes only. Any insights, calorie calculations, macros, body metrics, or recommendations are estimates and should not be treated as medical guidance.</p>
+                <p>Always consult a professional before:</p>
+                <ul>
+                    <li>Starting a new diet or nutrition plan.</li>
+                    <li>Beginning or modifying exercise routines.</li>
+                    <li>Relying on information related to weight loss, body fat, fasting, or supplements.</li>
+                    <li>Making decisions related to chronic health conditions.</li>
+                </ul>
+                <p><strong>Emergency Disclaimer:</strong> Do not use Trackerio in medical emergencies. Call your local emergency services immediately if you believe you're experiencing a medical issue.</p>
+            </div>
+
+            <h2>8. Third-Party Services & Apple Health</h2>
+            <p>Trackerio may integrate with third party services such as Apple Health.</p>
+            <ul>
+                <li>We read only the data categories you explicitly grant permission for.</li>
+                <li>You may enable or revoke permissions at any time in device settings.</li>
+                <li>Apple Health data is used solely to display, track, or improve health related features.</li>
+                <li>Data is never sold, shared, or used for advertising, profiling, or marketing.</li>
+                <li>Accuracy depends on Apple and paired devices.</li>
+                <li>Trackerio is not responsible for the accuracy or availability of third-party data.</li>
+                <li>Third party services operate under their own terms and privacy policies.</li>
+            </ul>
+
+            <h2>9. Subscription & Billing Terms</h2>
+            <p>All payments must be processed exclusively through the Apple App Store. Trackerio does not process, store, or have access to your payment information.</p>
+            <ul>
+                <li>Pricing may vary by region and currency.</li>
+                <li>All fees are non refundable, except where required by law.</li>
+                <li>Free trials: Duration is displayed in the app store; you will be charged automatically if not canceled before the trial ends.</li>
+                <li>Subscriptions can be managed via Apple App Store > Account > Subscriptions.</li>
+                <li>Deleting the app does not cancel your subscription.</li>
+                <li>Refunds must be requested directly through the App Store.</li>
+                <li>Pricing changes will not affect active billing periods and will be communicated through the app store.</li>
+            </ul>
+
+            <h2>10. Governing Law</h2>
+            <p>These Terms are governed by the laws of Australia. We may update these Terms at any time, and continued use means you accept the updated terms.</p>
+        </div>
+
+        <div id="privacy" class="tab-content">
+            <p><strong>Last updated:</strong> 25th December, 2025 </p>
+            <p>By accessing or using our website, you agree to the terms outlined in this Privacy Policy.</p>
+
+            <h2>1. Information We Collect</h2>
+            <h3>a. Personal Identification Information </h3>
+            <ul>
+                <li>Name, Profile picture, Gender, and Date of birth (DOB) .</li>
+            </ul>
+            <h3>b. Physical & Health Data </h3>
+            <ul>
+                <li>Height, Weight, Body fat/water percentage .</li>
+                <li>Apple Health data (if connected).</li>
+                <li>Sleep tracking, Intermittent fasting records, and Weekly progress/weights .</li>
+                <li>Sports and Workout tracking data .</li>
+            </ul>
+            <h3>c. Nutrition & Fitness Information </h3>
+            <ul>
+                <li>Maintenance calories, Macro information (protein, carbs, fats).</li>
+                <li>Foods eaten, Foods searched, and Grocery list .</li>
+                <li>Supplements, Cravings, and Weekly intake .</li>
+            </ul>
+            <h3>d. Activity & Habit Tracking </h3>
+            <ul>
+                <li>Daily tasks, Activity timers, Habits, and Habit schedules .</li>
+                <li>Goals (Today, Week, Month, Future) and Schedule .</li>
+            </ul>
+            <h3>e. Coaching & Media </h3>
+            <ul>
+                <li>Personal data submitted for coaching, Progress notes, and Uploaded photos .</li>
+            </ul>
+            <h3>f. Financial Tracking </h3>
+            <ul>
+                <li>Expenses tracking (numbers only, no payment information).</li>
+            </ul>
+
+            <h2>2. How We Use Your Information</h2>
+            <p>We use collected information to:</p>
+            <ul>
+                <li>Provide and maintain services.</li>
+                <li>Improve website performance and user experience.</li>
+                <li>Respond to messages/inquiries.</li>
+                <li>Send updates, promotions, or notifications (if subscribed).</li>
+                <li>Ensure security and fraud prevention.</li>
+            </ul>
+
+            <h2>3. Sharing & Security</h2>
+            <p>We do not sell your personal data. We may share information only with trusted service providers or legal authorities when required by law. We use reasonable technical and organizational measures to protect your information, though no system is 100% secure.</p>
+
+            <h2>4. Apple HealthKit Statement</h2>
+            <ul>
+                <li>Trackerio integrates with Apple HealthKit for optional features.</li>
+                <li>We do not use HealthKit data for advertising or marketing.</li>
+                <li>We do not sell or share HealthKit data with third parties.</li>
+                <li>HealthKit data is stored locally on your device whenever possible.</li>
+                <li>If synced to our servers, it uses end-to-end encryption.</li>
+                <li>We do not transfer HealthKit data to third-party servers other than Apple iCloud.</li>
+            </ul>
+
+            <h2>5. Your Data Rights</h2>
+            <p>Depending on your region, you may have the following rights:</p>
+            <ul>
+                <li><strong>Right to Access:</strong> Request a copy of data we hold about you.</li>
+                <li><strong>Right to Correction:</strong> Correct inaccurate or incomplete info.</li>
+                <li><strong>Right to Deletion:</strong> Request data deletion at any time.</li>
+                <li><strong>Right to Withdraw Consent:</strong> Revoke permissions (e.g., Apple Health).</li>
+                <li><strong>Right to Data Portability:</strong> Request an exported file of your data.</li>
+            </ul>
+
+            <h2>6. Data Retention & Deletion</h2>
+            <p>We retain info as long as necessary to provide services and comply with legal obligations. Once an account is deleted, personal data is permanently removed within 30 days.</p>
+            <ul>
+                <li>Health/fitness data: Retained until account deletion.</li>
+                <li>Photos: Retained until manually deleted or account removed.</li>
+                <li>Goals/habits/tasks: Retained for history unless deleted.</li>
+            </ul>
+
+            <h2>7. Children's Privacy</h2>
+            <p>We do not knowingly collect information from children under 13.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><strong>Contact Us:</strong><br>
+        Email: ambreonofficial@gmail.com<br>
+        Website: https://ambreon.com</p>
+        <p>&copy; 2025 Trackerio. All rights reserved.</p>
+        <p><small>This page is provided for informational purposes and does not constitute legal advice.</small></p>
+    </div>
+</div>
+
+<script>
+    function switchTab(tabId) {
+        // Update Buttons
+        document.querySelectorAll('.nav-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        event.currentTarget.classList.add('active');
+
+        // Update Content
+        document.querySelectorAll('.tab-content').forEach(content => {
+            content.classList.remove('active');
+        });
+        document.getElementById(tabId).classList.add('active');
+
+        // Scroll to top
+        window.scrollTo(0, 0);
+    }
+</script>
+
+</body>
+</html>
