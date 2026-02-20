@@ -58,6 +58,10 @@
   background-color: #111;
 }
 
+.work-item:first-child > img {
+  height: 500px;
+}
+
 .work-info {
   padding: 40px;
 }
